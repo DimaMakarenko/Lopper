@@ -1,0 +1,101 @@
+@import "style/variables";
+
+.nav-bar{
+  color: $accentColor2;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 68px;
+  a{
+    color: $accentColor2;
+  }
+}
+.isWhite{
+  color: $white;
+  a{
+    color: $white;
+  }
+}
+.logo{
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 43px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 14.4px;
+  line-height: 30px;
+}
+
+.menu-item{
+  margin-right: 54px;
+  position: relative;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover {
+    &:after{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 80%;
+      background-color: $accentColor2;
+      left: 10%;
+      bottom: 0;
+    }
+  }
+}
+.menu-white{
+  a{
+    &:hover{
+      &:after{
+        background-color: $white;
+      }
+    }
+  }
+
+}
+.phone{
+  display: flex;
+}
+.phone-image{
+  position: absolute;
+}
+.phone-number{
+  margin-left: 36px;
+}
+.burger{
+  height: 100%;
+}
+.burger-icon{
+  background-color:$accentColor2;
+  display: inline-block;
+  position: relative;
+  width: 27px;
+  height: 2px;
+  &:after, &:before{
+    content: "";
+    position: absolute;
+    background-color:$accentColor2;
+    height: 2px;
+  }
+  &:before{
+    width: 27px;
+    top: -7px;
+  }
+  &:after{
+    width: 18px;
+    right: 0;
+    top: 7px;
+  }
+
+}
+.burger-white{
+  background-color:$white;
+  &:before,  &:after{
+    background-color:$white;
+  }
+}
