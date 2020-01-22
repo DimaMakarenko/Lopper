@@ -3,6 +3,7 @@ import React from 'react';
 import Header from 'components/Header/Header';
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
+import Footer from 'components/Footer/Footer';
 // styles/image
 import classNames from 'classnames/bind';
 import headerImage from 'image/about-header.png';
@@ -30,6 +31,7 @@ const About = () => {
         image={testimonialsAvatar}
       />
       <Subscribe />
+      <Footer />
     </section>
   );
 };
