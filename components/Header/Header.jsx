@@ -4,12 +4,12 @@ import React from 'react';
 import NavBar from 'components/NavBar/NavBar';
 // styles
 // import classNames from 'classnames/bind';
-import styles from './styles.scss';
+// import styles from './styles.scss';
 
 const Header = () => {
   return (
     <header className="header">
-      <NavBar />
+      <NavBar isWhite={false} />
     </header>
   );
 };
