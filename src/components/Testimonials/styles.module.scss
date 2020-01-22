@@ -1,0 +1,78 @@
+@import 'style/variables';
+
+.testimonial {
+  background: #fcfcfc;
+}
+.testimonialFaces {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.testimonialContainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $accentColor2;
+  margin-bottom: 50px;
+  position: relative;
+}
+.avatar {
+  margin-top: -127px;
+  z-index: 2;
+  margin-bottom: 116px;
+  position: relative;
+  &:after {
+    font-family: 'Libre Baskerville', serif;
+    content: '\201c';
+    position: absolute;
+    color: $accentColor1;
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+    font-size: 250px;
+    line-height: 0;
+  }
+}
+.testimonialUser {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 29px;
+}
+.testimonialText {
+  max-width: 754px;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonialName {
+  font-weight: bold;
+  color: $accentColor1;
+  margin-right: 15px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    height: 2px;
+    width: 6px;
+    background-color: $accentColor2;
+  }
+}
+.testimonialFace1 {
+}
+.testimonialFace2 {
+}
+.testimonialFace3 {
+}
+.testimonialFace4 {
+}
+.testimonialFace5 {
+}
+.testimonialFace6 {
+}
+.testimonialFace7 {
+}
