@@ -3,7 +3,7 @@
 .testimonial {
   background: #fcfcfc;
 }
-.testimonialFaces {
+.faces {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -62,17 +62,45 @@
     background-color: $accentColor2;
   }
 }
-.testimonialFace1 {
+.arrows{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.testimonialFace2 {
+.arrowRight, .arrowLeft{
+  cursor: pointer;
 }
-.testimonialFace3 {
+
+.faceItems{
+  position: absolute;
 }
-.testimonialFace4 {
+.faceItem1 {
+  top: 3%;
+  left: 7%;
 }
-.testimonialFace5 {
+.faceItem2 {
+  top: 45%;
+  left: 0;
 }
-.testimonialFace6 {
+.faceItem3 {
+  top: 30%;
+  left: 20%;
 }
-.testimonialFace7 {
+.faceItem4 {
+  top: 34%;
+  right: 20%;
+}
+.faceItem5 {
+  top: 18%;
+  right: 10%;
+}
+.faceItem6 {
+  top: -5%;
+  right: 0;
+}
+.faceItem7 {
+  top: 30%;
+  right: 0;
 }
