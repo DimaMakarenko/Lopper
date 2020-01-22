@@ -1,0 +1,17 @@
+@import 'style/colors';
+
+.footer{
+  background-color: $footer;
+  color:$white;
+}
+.footerContainer{
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 3fr 3fr;
+}
+.logo{
+}
+.menu{}
+.services{}
+.contact{}
+.follow{}
+.note{}
