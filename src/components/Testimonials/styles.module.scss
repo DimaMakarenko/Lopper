@@ -63,18 +63,19 @@
     background-color: $accentColor2;
   }
 }
-.arrows{
+.arrows {
   position: absolute;
   bottom: 15%;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.arrowRight, .arrowLeft{
+.arrowRight,
+.arrowLeft {
   cursor: pointer;
 }
 
-.faceItems{
+.faceItems {
   position: absolute;
 }
 .faceItem1 {
