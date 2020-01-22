@@ -1,17 +1,20 @@
 @import "style/variables";
 
-.nav-bar{
+.navBar{
   color: $accentColor2;
-  letter-spacing: 2px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 68px;
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-size: 14.4px;
+  line-height: 30px;
+  letter-spacing: 2px;
   a{
     color: $accentColor2;
   }
 }
-.isWhite{
+.navBarWhite{
   color: $white;
   a{
     color: $white;
@@ -23,57 +26,23 @@
   line-height: 43px;
 }
 .menu{
-  display: flex;
-  justify-content: space-between;
-  font-weight: 800;
-  font-size: 14.4px;
-  line-height: 30px;
-}
 
-.menu-item{
+}
+.menuItem{
   margin-right: 54px;
-  position: relative;
   &:last-child{
     margin-right: 0;
   }
-  &:hover {
-    &:after{
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 80%;
-      background-color: $accentColor2;
-      left: 10%;
-      bottom: 0;
-    }
-  }
-}
-.menu-white{
-  a{
-    &:hover{
-      &:after{
-        background-color: $white;
-      }
-    }
-  }
-
-}
-.phone{
-  display: flex;
-}
-.phone-image{
-  position: absolute;
-}
-.phone-number{
-  margin-left: 36px;
 }
 .burger{
-  height: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
-.burger-icon{
+.burgerIcon{
+  display: block;
   background-color:$accentColor2;
-  display: inline-block;
   position: relative;
+  align-items: center;
   width: 27px;
   height: 2px;
   &:after, &:before{
@@ -91,11 +60,16 @@
     right: 0;
     top: 7px;
   }
-
 }
-.burger-white{
+.burgerIconWhite{
   background-color:$white;
   &:before,  &:after{
     background-color:$white;
+  }
+}
+.phone{
+ display: flex;
+  img{
+    margin-right: 18px;
   }
 }
