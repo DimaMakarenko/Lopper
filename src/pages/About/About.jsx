@@ -2,6 +2,7 @@ import React from 'react';
 // components
 import Header from 'components/Header/Header';
 import Testimonials from 'components/Testimonials/Testimonials';
+import Subscribe from 'components/Subscribe/Subscribe';
 // styles/image
 import classNames from 'classnames/bind';
 import headerImage from 'image/about-header.png';
@@ -28,6 +29,7 @@ const About = () => {
         company={testimonialsCompany}
         image={testimonialsAvatar}
       />
+      <Subscribe />
     </section>
   );
 };
