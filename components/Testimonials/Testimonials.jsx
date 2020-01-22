@@ -43,7 +43,7 @@ const Testimonials = ({ text, name, company, image }) => {
     <section className={testimonial}>
       <div className={cn('container', { testimonialContainers })}>
         <div className={avatar}>
-          <img src={image} alt=""/>
+          <img src={image} alt="" />
         </div>
         <span className={testimonialText}>{text}</span>
         <div className={testimonialUser}>
@@ -51,17 +51,17 @@ const Testimonials = ({ text, name, company, image }) => {
           <span className={testimonialCompany}>{company}</span>
         </div>
         <div className={faces}>
-          <img src={face1} alt="" className={cn(faceItems, faceItem1)}/>
-          <img src={face2} alt="" className={cn(faceItems, faceItem2)}/>
-          <img src={face3} alt="" className={cn(faceItems, faceItem3)}/>
-          <img src={face4} alt="" className={cn(faceItems, faceItem4)}/>
-          <img src={face5} alt="" className={cn(faceItems, faceItem5)}/>
-          <img src={face6} alt="" className={cn(faceItems, faceItem6)}/>
-          <img src={face7} alt="" className={cn(faceItems, faceItem7)}/>
+          <img src={face1} alt="" className={cn(faceItems, faceItem1)} />
+          <img src={face2} alt="" className={cn(faceItems, faceItem2)} />
+          <img src={face3} alt="" className={cn(faceItems, faceItem3)} />
+          <img src={face4} alt="" className={cn(faceItems, faceItem4)} />
+          <img src={face5} alt="" className={cn(faceItems, faceItem5)} />
+          <img src={face6} alt="" className={cn(faceItems, faceItem6)} />
+          <img src={face7} alt="" className={cn(faceItems, faceItem7)} />
         </div>
         <div className={arrows}>
-          <img src={arrowLeftIcon} alt="" className={arrowLeft}/>
-          <img src={arrowRightIcon} alt="" className={arrowRight}/>
+          <img src={arrowLeftIcon} alt="" className={arrowLeft} />
+          <img src={arrowRightIcon} alt="" className={arrowRight} />
         </div>
       </div>
     </section>
