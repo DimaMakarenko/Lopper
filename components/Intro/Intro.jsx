@@ -18,7 +18,6 @@ const Intro = ({ text, subTitle, title, smallText, position, isWhite }) => {
   );
 };
 Intro.propTypes = {
-  text: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired
 };
 export default Intro;

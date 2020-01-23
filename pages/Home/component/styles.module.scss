@@ -1,0 +1,66 @@
+@import '../../../style/colors';
+
+.ourServices {
+  padding-bottom: 150px;
+  position: relative;
+
+}
+
+.quote {
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.quoteContent {
+  padding: 100px;
+  background-color: $royalPurple;
+  color: $white;
+  font-size: 22.5px;
+  line-height: 40px;
+  font-style: italic;
+  span{
+    max-width: 750px;
+    display: block;
+
+  }
+}
+
+.quoteMan {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.quoteImage{
+  position: relative;
+  margin-right: -30px;
+}
+.quotePerson {
+  margin: 55px 0 55px 100px;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+}
+
+.personName {
+  color: $razzmatazz;
+  font-weight: 900;
+  position: relative;
+
+  &:after {
+    content: "";
+    height: 2px;
+    width: 7px;
+    top: 50%;
+    right: -12px;
+    position: absolute;
+    background-color: $accentColor2;
+  }
+
+}
+
+.personCompany {
+  color: $accentColor2;
+  margin-left: 15px;
+  font-weight: 400;
+
+}
