@@ -5,6 +5,7 @@ import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
 import OurServices from 'components/OurServices/OurServices';
+import Prizes from 'components/Prizes/Prizes';
 // const
 import { SERVICE_SERVICES } from 'components/OurServices/constants';
 // image
@@ -17,6 +18,7 @@ const Services = () => {
   return (
     <main>
       <Header title={title} image={headerImage} />
+      <Prizes />
       <OurServices services={SERVICE_SERVICES} />
       <Testimonials image={testimonialsAvatar} />
       <Subscribe />
