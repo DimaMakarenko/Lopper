@@ -29,6 +29,9 @@ const NavBar = ({ isWhite }) => {
         <Link to="/about" className={menuItem}>
           About
         </Link>
+        <Link to="/team" className={menuItem}>
+          Team
+        </Link>
       </nav>
       <div className={phone}>
         <img src={isWhite ? phoneIcoWhite : phoneIcoBlack} alt="phone" />

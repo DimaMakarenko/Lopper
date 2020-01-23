@@ -10,7 +10,7 @@
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 50px ;
+  grid-row-gap: 50px;
 }
 .item {
   display: flex;
@@ -18,16 +18,16 @@
   padding: 0 30px;
   margin-top: -150px;
   position: relative;
-  &:nth-child(2n){
+  &:nth-child(2n) {
     justify-content: flex-end;
     margin-top: -70px;
   }
 }
-.avatar{
+.avatar {
   height: 460px;
 }
-.comment{
-  color:$white;
+.comment {
+  color: $white;
   height: 460px;
   width: 460px;
   background-color: $royalPurple;
@@ -37,22 +37,26 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.names{font-weight: 800;
+.names {
+  font-weight: 800;
   font-size: 21.6px;
-  line-height: 35px;}
-.profession{
+  line-height: 35px;
+}
+.profession {
   font-weight: 800;
   font-size: 12.6px;
   line-height: 26px;
   letter-spacing: 6px;
-  opacity: .5;
+  opacity: 0.5;
 }
-.email{
-  margin-top: 15px;}
-.text{font-size: 18px;
-  line-height: 29px;}
-.commentImage{
+.email {
+  margin-top: 15px;
+}
+.text {
+  font-size: 18px;
+  line-height: 29px;
+}
+.commentImage {
   height: 97px;
   width: 97px;
-
 }
