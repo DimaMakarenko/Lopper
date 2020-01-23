@@ -4,6 +4,7 @@ import Header from 'components/Header/Header';
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
+import Evaluation from 'components/Evaluation/Evaluation';
 // styles/image
 import classNames from 'classnames/bind';
 import headerImage from 'image/about-header.png';
@@ -24,6 +25,7 @@ const About = () => {
   return (
     <section className={cn('about')}>
       <Header title={title} subTitle={subTitle} image={headerImage} />
+      <Evaluation bgColor="royalPurple" showNumber={false} />
       <Testimonials
         text={testimonialsText}
         name={testimonialsName}
