@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 // proptypes
 import PropTypes from 'prop-types';
+// component
+import Intro from 'components/Intro/Intro';
 // image
 import reactIcon from 'image/react.svg';
 // styles
@@ -11,10 +13,16 @@ const cn = classNames.bind(styles);
 const { items, item, itemTitle, itemText, active } = styles;
 const EVALUATE = ['Research', 'Marketing', 'Results'];
 
+// intro
+const subTitle = 'What we do';
+const text =
+  'Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.';
+
 const Evaluation = ({ bgColor, showNumber }) => {
   const [activeItem, setActiveItem] = useState(0);
   return (
-    <section className={cn(bgColor)}>
+    <section className={cn('block', bgColor)}>
+      <Intro subTitle={subTitle} text={text} isWhite />
       <div className={cn('container', items)}>
         {EVALUATE.map((elem, index) => (
           <div
@@ -41,30 +49,3 @@ Evaluation.propTypes = {
 };
 
 export default Evaluation;
-
-/*
- <div className={item}>
-          <img src={reactIcon} alt="" />
-          <span className={itemTitle}>Research</span>
-          <span className={itemText}>
-            Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat
-            pretium nibh ipsum consequat nisl vel pretium.
-          </span>
-        </div>
-        <div className={item}>
-          <img src={reactIcon} alt="" />
-          <span className={itemTitle}>Marketing</span>
-          <span className={itemText}>
-            Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat
-            pretium nibh ipsum consequat nisl vel pretium.
-          </span>
-        </div>
-        <div className={item}>
-          <img src={reactIcon} alt="" />
-          <span className={itemTitle}>Results</span>
-          <span className={itemText}>
-            Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat
-            pretium nibh ipsum consequat nisl vel pretium.
-          </span>
-        </div>
- */
