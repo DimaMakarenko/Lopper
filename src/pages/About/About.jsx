@@ -5,6 +5,8 @@ import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
 import Evaluation from 'components/Evaluation/Evaluation';
+import Objective from 'components/Objective/Objective';
+
 // image
 import headerImage from 'image/about-header.png';
 import testimonialsAvatar from 'image/avatars/avatar1.png';
@@ -19,13 +21,14 @@ const title = 'About us';
 
 const About = () => {
   return (
-    <section className={cn('about')}>
+    <main className={cn('about')}>
       <Header title={title} image={headerImage} />
+      <Objective />
       <Evaluation bgColor="royalPurple" showNumber={false} />
       <Testimonials image={testimonialsAvatar} />
       <Subscribe />
       <Footer />
-    </section>
+    </main>
   );
 };
 

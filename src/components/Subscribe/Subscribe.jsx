@@ -10,7 +10,7 @@ const { subscribe, title, subTitle, form, formBtn, formInput, formImage } = styl
 
 const Subscribe = () => {
   return (
-    <section className={cn('container', subscribe)}>
+    <section className={cn('container block', subscribe)}>
       <h2 className={title}>Subscribe to our newsletter</h2>
       <span className={subTitle}>Cras pulvinar mattis nunc sed blandit.</span>
       <form className={form}>

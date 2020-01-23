@@ -1,0 +1,21 @@
+@import "style/colors";
+
+.objective{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  grid-column-gap: 120px;
+  padding: 20px 0 100px;
+
+}
+.item{
+  font-size: 18px;
+  line-height: 29px;
+  color: #776C82;
+}
+.blockTitle{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $accentColor2;
+  margin-bottom: 12px;
+}

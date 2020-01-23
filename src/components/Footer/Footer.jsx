@@ -34,7 +34,7 @@ const {
 
 const Footer = () => {
   return (
-    <footer className={footer}>
+    <footer className={cn('block', footer)}>
       <div className={cn('container', footerContainer)}>
         <div className={logo}>
           <span className={logoTitle}>Lopper</span>

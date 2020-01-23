@@ -3,7 +3,7 @@
 .royalPurple {
   background-color: $royalPurple;
   color: $white;
-  padding: 100px 0 300px;
+  padding-bottom: 300px;
 }
 
 .items {
@@ -11,7 +11,7 @@
   grid-template-columns: repeat(auto-fill, minmax(361px, 1fr));
   grid-column-gap: 30px;
   height: 361px;
-
+  padding-top: 50px;
 }
 
 .item {
@@ -22,13 +22,17 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transition: 0.2s;
-  img{
+
+
+  img {
     width: 54px;
   }
 }
-.active{
+
+.active {
   background-color: $razzmatazz;
 }
+
 .itemTitle {
   font-weight: 500;
   font-size: 27px;
