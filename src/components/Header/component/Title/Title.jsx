@@ -8,17 +8,16 @@ import styles from './styles.module.scss';
 const cn = classNames.bind(styles);
 const { titleContainer, titleH, titleText, titleTextWhite } = styles;
 
-const Title = ({ subTitle, title, isWhite }) => {
+const Title = ({ title, isWhite }) => {
   return (
     <div className={cn('container', { titleContainer })}>
       <h1 className={titleH}>{title}</h1>
-      <span className={cn(!isWhite && titleTextWhite, { titleText })}>{subTitle}</span>
+      <span className={cn(!isWhite && titleTextWhite, { titleText })}>We build great business</span>
     </div>
   );
 };
 
 Title.propTypes = {
-  subTitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   isWhite: PropTypes.bool.isRequired
 };

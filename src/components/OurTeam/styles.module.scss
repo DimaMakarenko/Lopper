@@ -1,0 +1,57 @@
+@import 'style/colors';
+
+.ourTeam {
+  background-color: $blackCurrant;
+  z-index: 2;
+  padding-bottom: 300px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -210px;
+
+}
+
+.item {
+  display: flex;
+  height: 615px;
+  padding: 0 30px;
+  &:nth-child(2n){
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+.avatar{
+  height: 460px;
+}
+.comment{
+  color:$white;
+  height: 460px;
+  width: 460px;
+  background-color: $royalPurple;
+  box-sizing: border-box;
+  padding: 55px 70px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.names{font-weight: 800;
+  font-size: 21.6px;
+  line-height: 35px;}
+.profession{
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 26px;
+  letter-spacing: 6px;
+  opacity: .5;
+}
+.email{
+  margin-top: 15px;}
+.text{font-size: 18px;
+  line-height: 29px;}
+.commentImage{
+  height: 97px;
+  width: 97px;
+
+}
