@@ -1,18 +1,17 @@
-@import "style/colors";
+@import 'style/colors';
 
-.objective{
+.objective {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
   grid-column-gap: 120px;
   padding: 20px 0 100px;
-
 }
-.item{
+.item {
   font-size: 18px;
   line-height: 29px;
-  color: #776C82;
+  color: #776c82;
 }
-.blockTitle{
+.blockTitle {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;

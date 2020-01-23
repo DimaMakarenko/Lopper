@@ -1,9 +1,8 @@
-@import '../../../style/colors';
+@import '../../../../style/colors';
 
 .ourServices {
   padding-bottom: 150px;
   position: relative;
-
 }
 
 .quote {
@@ -18,10 +17,9 @@
   font-size: 22.5px;
   line-height: 40px;
   font-style: italic;
-  span{
+  span {
     max-width: 750px;
     display: block;
-
   }
 }
 
@@ -30,7 +28,7 @@
   right: 0;
   bottom: 0;
 }
-.quoteImage{
+.quoteImage {
   position: relative;
   margin-right: -30px;
 }
@@ -47,7 +45,7 @@
   position: relative;
 
   &:after {
-    content: "";
+    content: '';
     height: 2px;
     width: 7px;
     top: 50%;
@@ -55,12 +53,10 @@
     position: absolute;
     background-color: $accentColor2;
   }
-
 }
 
 .personCompany {
   color: $accentColor2;
   margin-left: 15px;
   font-weight: 400;
-
 }

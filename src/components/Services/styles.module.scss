@@ -1,4 +1,4 @@
-@import "style/colors";
+@import 'style/colors';
 
 .serviceItems {
   display: grid;
@@ -28,7 +28,7 @@
 .serviceText {
   font-size: 16.2px;
   line-height: 26px;
-  color: #776C82;
+  color: #776c82;
 }
 
 .white {
@@ -36,7 +36,7 @@
 }
 
 .pink {
-  color: $pink
+  color: $pink;
 }
 
 .green {
