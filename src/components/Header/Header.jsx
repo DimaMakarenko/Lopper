@@ -7,7 +7,7 @@ import Title from './component/Title/Title';
 import Image from './component/Image/Image';
 // styles
 // import classNames from 'classnames/bind';
-// import styles from './styles.scss';
+// import styles from './styles.module.scss';
 
 const Header = ({ title, image }) => {
   return (

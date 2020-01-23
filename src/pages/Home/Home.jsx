@@ -1,18 +1,34 @@
 import React from 'react';
 // components
-// eslint-disable-next-line import/no-unresolved
 import NavBar from 'components/NavBar/NavBar';
+import Footer from 'components/Footer/Footer';
+import Subscribe from 'components/Subscribe/Subscribe';
+import Testimonials from 'components/Testimonials/Testimonials';
+// image
+import testimonialsAvatar from 'image/avatars/avatar3.png';
+// const
+import { HOME_SERVICES } from 'components/Services/constants';
 // styles
 import classNames from 'classnames/bind';
-import styles from './styles.scss';
+import OurServices from './component/OurServices';
+import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
+const { home } = styles;
 
 const Home = () => {
   return (
-    <header className={cn('home')}>
-      <NavBar isWhite />
-    </header>
+    <>
+      <header className={home}>
+        <NavBar isWhite />
+      </header>
+      <main>
+        <OurServices services={HOME_SERVICES} />
+        <Testimonials image={testimonialsAvatar} />
+        <Subscribe />
+      </main>
+      <Footer />
+    </>
   );
 };
 
