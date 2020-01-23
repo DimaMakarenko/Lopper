@@ -6,7 +6,6 @@ import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
 import Evaluation from 'components/Evaluation/Evaluation';
 import Objective from 'components/Objective/Objective';
-
 // image
 import headerImage from 'image/about-header.png';
 import testimonialsAvatar from 'image/avatars/avatar1.png';
