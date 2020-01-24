@@ -12,7 +12,7 @@ const Title = ({ title, isWhite }) => {
   return (
     <div className={cn('container', { titleContainer })}>
       <h1 className={titleH}>{title}</h1>
-      <span className={cn(!isWhite && titleTextWhite, { titleText })}>We build great business</span>
+      <span className={cn(isWhite && titleTextWhite, { titleText })}>We build great business</span>
     </div>
   );
 };

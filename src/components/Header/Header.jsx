@@ -9,19 +9,18 @@ import Image from './component/Image/Image';
 // import classNames from 'classnames/bind';
 // import styles from './styles.module.scss';
 
-const Header = ({ title, image }) => {
+const Header = ({ title, image, isWhite = true }) => {
   return (
     <header className="header">
       <NavBar isWhite={false} />
       <Image image={image}>
-        <Title title={title} isWhite={false} />
+        <Title title={title} isWhite={isWhite} />
       </Image>
     </header>
   );
 };
 
 Header.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 export default Header;

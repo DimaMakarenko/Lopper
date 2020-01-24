@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <>
       <header className={home}>
-        <Header />
+        <Header isWhite />
       </header>
       <main>
         <OurServices services={HOME_SERVICES} />

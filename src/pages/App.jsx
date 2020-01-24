@@ -7,6 +7,7 @@ import About from './About/About';
 import Team from './Team/Team';
 import Services from './Services/Services';
 import NotFound from './NotFound/NotFound';
+import Work from './Work/Work';
 
 const App = () => (
   <Router>
@@ -14,6 +15,7 @@ const App = () => (
       <Route exact path="/home" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/team" component={Team} />
+      <Route exact path="/work" component={Work} />
       <Route exact path="/services" component={Services} />
       <Route path="/" exact>
         <Redirect to="/home" />
