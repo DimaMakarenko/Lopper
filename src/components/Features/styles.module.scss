@@ -1,0 +1,51 @@
+@import 'style/colors';
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 150px;
+}
+.sides{
+  position: relative;
+}
+.featuresText {
+  color: $blackCurrant;
+  padding: 20px 0;
+  max-width: 460px;
+
+  span {
+    display: block;
+    margin-bottom: 40px;
+    line-height: 29px;
+    font-size: 18px;
+  }
+}
+
+.featuresBtn {
+  padding: 0;
+  border: none;
+  background-color: $razzmatazz;
+  color: $white;
+  width: 200px;
+  height: 45px;
+  border-radius: 36px;
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.image1{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.image2{
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
