@@ -1,7 +1,7 @@
 import React from 'react';
 // proptypes
 import PropTypes from 'prop-types';
-// components
+// component
 import NavBar from 'components/NavBar/NavBar';
 import Title from './component/Title/Title';
 import Image from './component/Image/Image';

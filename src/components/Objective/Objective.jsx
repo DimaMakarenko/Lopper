@@ -1,5 +1,5 @@
 import React from 'react';
-// components
+// component
 import Intro from 'components/Intro/Intro';
 // styles
 import classNames from 'classnames/bind';

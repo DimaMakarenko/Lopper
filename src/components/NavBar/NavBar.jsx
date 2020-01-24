@@ -17,7 +17,7 @@ const NavBar = ({ isWhite }) => {
     <div className={cn('container', { navBar }, isWhite && navBarWhite)}>
       <div className={logo}>Lopper</div>
       <nav>
-        <Link to="/home" className={menuItem}>
+        <Link to="/home" className={cn('menuItem')}>
           Home
         </Link>
         <Link to="/services" className={menuItem}>

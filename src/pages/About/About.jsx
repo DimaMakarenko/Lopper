@@ -1,11 +1,12 @@
 import React from 'react';
-// components
+// component
 import Header from 'components/Header/Header';
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
 import Evaluation from 'components/Evaluation/Evaluation';
 import Objective from 'components/Objective/Objective';
+import Clients from 'pages/About/component/Clients/Clients';
 // image
 import headerImage from 'image/about-header.png';
 import testimonialsAvatar from 'image/avatars/avatar1.png';
@@ -23,6 +24,7 @@ const About = () => {
     <main className={cn('about')}>
       <Header title={title} image={headerImage} />
       <Objective />
+      <Clients />
       <Evaluation bgColor="royalPurple" showNumber={false} />
       <Testimonials image={testimonialsAvatar} />
       <Subscribe />

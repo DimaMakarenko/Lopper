@@ -1,0 +1,34 @@
+@import 'style/colors';
+
+
+.clientsContainer {
+  background-color: $royalPurple;
+  padding-top: 100px;
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -10px;
+}
+
+.business {
+  padding: 100px 0;
+  position: relative;
+}
+
+.logos {
+  padding-top: 100px;
+  background-color: $pink;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: $pink;
+    width: 9999px;
+    top: 0;
+    right: -9998px;
+  }
+}
