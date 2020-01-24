@@ -6,6 +6,12 @@
   padding-bottom: 300px;
 }
 
+.currant {
+  background-color: $currant;
+  color: $white;
+  padding-bottom: 300px;
+}
+
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(361px, 1fr));
