@@ -18,29 +18,39 @@ const {
   headerScroll,
   scrollImage,
   subheader,
-  subImage
+  subImage,
+  subContent,
+  subText
 } = styles;
 
 const Header = () => {
   return (
-    <div className={cn('container', header)}>
-      <NavBar isWhite />
-      <div className={headerContent}>
-        <span className={headerTitle}>
-          <span className={headerSubtitle}>What we do?</span>
-          We grow
-          <span className={pink}>great business</span>
-        </span>
-        <div className={headerScroll}>
-          Scroll to see more
-          <img src={scrollIcon} alt="" className={scrollImage} />
+    <>
+      <div className={cn('container', header)}>
+        <NavBar isWhite />
+        <div className={headerContent}>
+          <span className={headerTitle}>
+            <span className={headerSubtitle}>What we do?</span>
+            We grow
+            <span className={pink}>great business</span>
+          </span>
+          <div className={headerScroll}>
+            Scroll to see more
+            <img src={scrollIcon} alt="" className={scrollImage} />
+          </div>
         </div>
       </div>
-      <div className={subheader}>
-        Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.
-        <img src={arrowCircle} alt="" className={subImage} />
+      <div className={subContent}>
+        <div className={cn('container')}>
+          <div className={subheader}>
+            <span className={subText}>
+              Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.
+              <img src={arrowCircle} alt="" className={subImage} />
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
