@@ -7,6 +7,7 @@ import OurServices from 'pages/Home/component/OurServices/OurServices';
 import Header from 'pages/Home/component/Header/Header';
 import Evaluation from 'components/Evaluation/Evaluation';
 import Features from 'components/Features/Features';
+import Clients from 'pages/Home/component/Clients/Clients';
 // image
 import testimonialsAvatar from 'image/avatars/avatar3.png';
 // const
@@ -27,6 +28,7 @@ const Home = () => {
       <main>
         <OurServices services={HOME_SERVICES} />
         <Features />
+        <Clients />
         <Evaluation bgColor="currant" showNumber />
         <Testimonials image={testimonialsAvatar} />
         <Subscribe />

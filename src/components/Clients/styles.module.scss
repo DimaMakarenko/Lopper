@@ -1,0 +1,59 @@
+@import 'style/colors';
+
+// business
+.business {
+  display: flex;
+  flex-direction: column;
+}
+
+.businessTitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  margin-bottom: 35px;
+}
+
+.businessText {
+  font-size: 18px;
+  line-height: 29px;
+  color: $white;
+  max-width: 460px;
+  span{
+    display: block;
+    padding-bottom: 40px;
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.pink {
+  color: $razzmatazz;
+}
+
+// our client
+.logos {
+  max-width: 460px;
+  justify-self: end;
+}
+
+.logosTitle {
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: $currant;
+  padding-bottom: 85px;
+}
+
+.logosItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 110px  125px;
+
+}
