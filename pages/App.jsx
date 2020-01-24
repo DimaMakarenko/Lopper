@@ -1,7 +1,7 @@
 import React from 'react';
 // routing
 import { Switch, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
-// components
+// component
 import Home from './Home/Home';
 import About from './About/About';
 import Team from './Team/Team';

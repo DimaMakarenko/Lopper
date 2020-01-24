@@ -1,5 +1,5 @@
 import React from 'react';
-// components
+// component
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
