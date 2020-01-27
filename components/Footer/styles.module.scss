@@ -12,6 +12,7 @@
 .footerContainer {
   display: grid;
   grid-template-columns: 3fr 1fr 2fr 3fr 3fr;
+  max-width: 1000px;
 }
 
 .logo {

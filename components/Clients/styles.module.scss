@@ -1,4 +1,5 @@
 @import 'style/colors';
+@import 'style/media';
 
 // business
 .business {
@@ -23,6 +24,10 @@
     display: block;
     padding-bottom: 40px;
   }
+  @media (max-width: $extraLarge) {
+    line-height: 25px;
+    max-width: 400px;
+  }
 }
 
 .pink {
@@ -34,6 +39,9 @@
   max-width: 460px;
   justify-self: end;
   margin-left: 100px;
+  @media (max-width: $extraLarge) {
+    margin-left: 20px;
+  }
 }
 
 .logosTitle {
@@ -53,6 +61,10 @@
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   grid-gap: 110px 125px;
+  @media (max-width: $extraLarge) {
+    grid-gap: 80px 80px;
+
+  }
 }
 
 .white {

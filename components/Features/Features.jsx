@@ -27,7 +27,7 @@ const Features = () => {
             <span>Lectus vestibulum mattis ullamcorper velit sed ullamcorper.</span>
             <span>
               Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Dui faucibus in
-              ornare quam viverra.
+              ornare quam viverr
             </span>
             <span>Posuere ac ut consequat semper viverra.</span>
           </div>

@@ -1,30 +1,48 @@
 @import 'style/colors';
+@import 'style/media';
 
 .ourTeam {
   background-color: $blackCurrant;
   z-index: 2;
   padding-bottom: 300px;
   position: relative;
+  @media (max-width: $extraLarge){
+    padding-bottom: 200px;
+  }
 }
 
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 50px;
+  @media (max-width: $extraLarge) {
+    max-width: 1000px;
+  }
 }
 .item {
   display: flex;
   height: 615px;
   padding: 0 30px;
   margin-top: -150px;
+  @media (max-width: $extraLarge){
+    margin-top: -100px;
+    height: 500px;
+  }
   position: relative;
   &:nth-child(2n) {
     justify-content: flex-end;
     margin-top: -70px;
+    @media (max-width: $extraLarge){
+      margin-top: -20px;
+    }
   }
 }
 .avatar {
   height: 460px;
+  @media (max-width: $extraLarge){
+    height: 400px;
+  }
+
 }
 .comment {
   color: $white;
@@ -36,6 +54,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: $extraLarge){
+    height: 400px;
+    width: 400px;
+  }
 }
 .names {
   font-weight: 800;
