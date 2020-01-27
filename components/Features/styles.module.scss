@@ -9,7 +9,6 @@
     max-width: 1000px;
     margin: 0 auto;
     grid-template-columns: 4fr 3fr;
-    padding-left: 50px;
   }
 }
 .sides {
@@ -25,6 +24,9 @@
     margin-bottom: 40px;
     line-height: 29px;
     font-size: 18px;
+  }
+  @media (max-width: $extraLarge){
+    margin-left: 50px;
   }
 }
 
@@ -45,6 +47,9 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
+  @media (max-width: $extraLarge){
+    margin-left: 50px;
+  }
 }
 
 .image1 {
