@@ -1,6 +1,6 @@
 @import 'style/colors';
 
-.virtuesMain{
+.virtuesMain {
   overflow: hidden;
 }
 .virtues {
@@ -12,13 +12,12 @@
 .virtuesTitle {
   padding: 80px 0;
   position: relative;
-
 }
 
 .virtuesContainer {
   background-color: $currant;
   position: relative;
-  &:before{
+  &:before {
     content: '';
     width: 9999px;
     height: 500px;
@@ -55,7 +54,7 @@
   color: $razzmatazz;
   position: relative;
 
-   &:last-child{
+  &:last-child {
     padding-bottom: 120px;
   }
 
@@ -71,14 +70,13 @@
 }
 
 .contentRight {
-
   padding-top: 70px;
   padding-left: 50px;
   font-size: 18px;
   line-height: 29px;
   color: $white;
   z-index: 2;
-    &:last-child{
+  &:last-child {
     padding-bottom: 120px;
   }
 }
@@ -86,8 +84,6 @@
 .contentRightText {
   display: block;
   max-width: 400px;
-
-
 }
 
 .contentLeftText {

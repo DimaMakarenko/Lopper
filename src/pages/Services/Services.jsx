@@ -17,15 +17,17 @@ const title = 'Our services';
 
 const Services = () => {
   return (
-    <main>
+    <>
       <Header title={title} image={headerImage} />
-      <Prizes />
-      <OurServices services={SERVICE_SERVICES} />
-      <Strategy />
-      <Testimonials image={testimonialsAvatar} />
-      <Subscribe />
+      <main>
+        <Prizes />
+        <OurServices services={SERVICE_SERVICES} />
+        <Strategy />
+        <Testimonials image={testimonialsAvatar} />
+        <Subscribe />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 
