@@ -11,64 +11,50 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const {
-  gallery,
-  galleryList,
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  blocks,
-  lines,
-  images,
-  galleryText,
-  galleryTitle
-} = styles;
 
 const Gallery = () => {
   return (
-    <section className={gallery}>
-      <div className={galleryList}>
-        <div className={lines}>
-          <div className={blocks}>
-            <div className={galleryText}>
-              <span className={galleryTitle}>Photo name</span>
+    <section className={cn('gallery')}>
+      <div className={cn('galleryList')}>
+        <div className={cn('lines')}>
+          <div className={cn('blocks')}>
+            <div className={cn('galleryText')}>
+              <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage1} alt="" className={cn(images, image1)} />
+            <img src={galleryImage1} alt="" className={cn('images', 'image1')} />
           </div>
-          <div className={blocks}>
-            <div className={galleryText}>
-              <span className={galleryTitle}>Photo name</span>
+          <div className={cn('blocks')}>
+            <div className={cn('galleryText')}>
+              <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage2} alt="" className={cn(images, image2)} />
+            <img src={galleryImage2} alt="" className={cn('images', 'image2')} />
           </div>
         </div>
-        <div className={lines}>
-          <div className={blocks}>
-            <div className={galleryText}>
-              <span className={galleryTitle}>Photo name</span>
+        <div className={cn('lines')}>
+          <div className={cn('blocks')}>
+            <div className={cn('galleryText')}>
+              <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
           </div>
-          <img src={galleryImage3} alt="" className={cn(images, image3)} />
+          <img src={galleryImage3} alt="" className={cn('images', 'image3')} />
         </div>
-        <div className={lines}>
-          <div className={blocks}>
-            <div className={galleryText}>
-              <span className={galleryTitle}>Photo name</span>
+        <div className={cn('lines')}>
+          <div className={cn('blocks')}>
+            <div className={cn('galleryText')}>
+              <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage4} alt="" className={cn(images, image4)} />
+            <img src={galleryImage4} alt="" className={cn('images', 'image4')} />
           </div>
-          <div className={blocks}>
-            <div className={galleryText}>
-              <span className={galleryTitle}>Photo name</span>
+          <div className={cn('blocks')}>
+            <div className={cn('galleryText')}>
+              <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage5} alt="" className={cn(images, image5)} />
+            <img src={galleryImage5} alt="" className={cn('images', 'image5')} />
           </div>
         </div>
       </div>

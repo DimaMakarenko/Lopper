@@ -10,7 +10,10 @@ import Intro from 'components/Intro/Intro';
 import headerImage from 'image/team-header.png';
 import testimonialsAvatar from 'image/avatars/avatar2.png';
 // styles
+import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
+
+const cn = classNames.bind(styles);
 
 const title = 'Our team';
 // intro
@@ -22,7 +25,7 @@ const Team = () => {
   return (
     <main>
       <Header title={title} image={headerImage} />
-      <section className={styles.introContainers}>
+      <section className={cn('introContainers')}>
         <Intro text={introText} subTitle={introSubTitle} title={title} position="center" />
       </section>
       <OurTeam />

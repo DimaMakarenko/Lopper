@@ -55,10 +55,7 @@
   color: $razzmatazz;
   position: relative;
 
-  &:first-child {
-    padding-top: 120px;
-  }
-  &:last-child{
+   &:last-child{
     padding-bottom: 120px;
   }
 
@@ -81,10 +78,7 @@
   line-height: 29px;
   color: $white;
   z-index: 2;
-  &:first-child {
-    padding-top: 120px;
-  }
-  &:last-child{
+    &:last-child{
     padding-bottom: 120px;
   }
 }

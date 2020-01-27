@@ -11,49 +11,37 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const {
-  ourTeam,
-  items,
-  item,
-  comment,
-  names,
-  profession,
-  text,
-  email,
-  avatar,
-  commentImage
-} = styles;
 
 const OurTeam = () => {
   return (
-    <section className={ourTeam}>
-      <div className={cn('container', { items })}>
-        <div className={item}>
-          <img src={avatar2} alt="" className={avatar} />
+    <section className={cn('ourTeam')}>
+      <div className={cn('container', 'items')}>
+        <div className={cn('item')}>
+          <img src={avatar2} alt="" className={cn('avatar')} />
         </div>
-        <div className={item}>
-          <img src={avatar3} alt="" className={avatar} />
+        <div className={cn('item')}>
+          <img src={avatar3} alt="" className={cn('avatar')} />
         </div>
-        <div className={item}>
-          <img src={avatar4} alt="" className={avatar} />
+        <div className={cn('item')}>
+          <img src={avatar4} alt="" className={cn('avatar')} />
         </div>
-        <div className={item}>
-          <div className={comment}>
-            <span className={names}>Klara Ipsum</span>
-            <span className={profession}> Designer</span>
-            <span className={text}>
+        <div className={cn('item')}>
+          <div className={cn('comment')}>
+            <span className={cn('names')}>Klara Ipsum</span>
+            <span className={cn('profession')}> Designer</span>
+            <span className={cn('text')}>
               By the same illusion which lifts the horizon of the sea to the level of the spectator
               on a hillside.
             </span>
-            <span className={email}>klara@lopper.com</span>
-            <img src={avatarMini} alt="" className={commentImage} />
+            <span className={cn('email')}>klara@lopper.com</span>
+            <img src={avatarMini} alt="" className={cn('commentImage')} />
           </div>
         </div>
-        <div className={item}>
-          <img src={avatar5} alt="" className={avatar} />
+        <div className={cn('item')}>
+          <img src={avatar5} alt="" className={cn('avatar')} />
         </div>
-        <div className={item}>
-          <img src={avatar6} alt="" className={avatar} />
+        <div className={cn('item')}>
+          <img src={avatar6} alt="" className={cn('avatar')} />
         </div>
       </div>
     </section>

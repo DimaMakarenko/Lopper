@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { ourServices } = styles;
 
 const title = 'Our services';
 const subTitle = 'What we do';
@@ -17,7 +16,7 @@ const text =
 
 const OurServices = ({ services }) => {
   return (
-    <section className={cn('block', ourServices)}>
+    <section className={cn('block', 'ourServices')}>
       <Intro subTitle={subTitle} text={text} isWhite position="center" title={title} />
       <Service services={services} />
     </section>

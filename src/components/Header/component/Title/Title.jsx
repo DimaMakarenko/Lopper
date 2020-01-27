@@ -6,13 +6,12 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { titleContainer, titleH, titleText, titleTextWhite } = styles;
 
 const Title = ({ title, isWhite }) => {
   return (
-    <div className={cn('container', { titleContainer })}>
-      <h1 className={titleH}>{title}</h1>
-      <span className={cn(isWhite && titleTextWhite, { titleText })}>We build great business</span>
+    <div className={cn('container', 'titleContainer')}>
+      <h1 className={cn('titleH')}>{title}</h1>
+      <span className={cn(isWhite && 'titleTextWhite', 'titleText')}>We build great business</span>
     </div>
   );
 };

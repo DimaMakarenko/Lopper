@@ -6,7 +6,6 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { prizes, prizeItem, prizeName, pink, green, purple } = styles;
 
 // intro
 const subTitle = 'What we do';
@@ -18,18 +17,18 @@ const Prizes = () => {
     <section className={cn('block')}>
       <div className={cn('container')}>
         <Intro subTitle={subTitle} text={text} position="center" />
-        <div className={prizes}>
-          <div className={cn(prizeItem, pink)}>
+        <div className={cn('prizes')}>
+          <div className={cn('prizeItem', 'pink')}>
             15+
-            <span className={prizeName}>Nobel prizes</span>
+            <span className={cn('prizeName')}>Nobel prizes</span>
           </div>
-          <div className={cn(prizeItem, purple)}>
+          <div className={cn('prizeItem', 'purple')}>
             33
-            <span className={prizeName}>Nobel prizes</span>
+            <span className={cn('prizeName')}>Nobel prizes</span>
           </div>
-          <div className={cn(prizeItem, green)}>
+          <div className={cn('prizeItem', 'green')}>
             12
-            <span className={prizeName}>Nobel prizes</span>
+            <span className={cn('prizeName')}>Nobel prizes</span>
           </div>
         </div>
       </div>

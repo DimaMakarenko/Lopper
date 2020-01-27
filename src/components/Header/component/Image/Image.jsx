@@ -6,18 +6,16 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const { headerImage, imageContainer, noImage } = styles;
-
 const Image = ({ image, children }) => {
   return (
-    <div className={imageContainer}>
+    <div className={cn('imageContainer')}>
       {image ? (
         <>
-          <img src={image} alt="" className={headerImage} />
+          <img src={image} alt="" className={cn('headerImage')} />
           {children}
         </>
       ) : (
-        <div className={cn('container', noImage)}>{children}</div>
+        <div className={cn('container', 'noImage')}>{children}</div>
       )}
     </div>
   );

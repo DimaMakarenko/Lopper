@@ -6,14 +6,13 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { introTitle, introSubTitle, introText, introSmallText, intro } = styles;
 
 const Intro = ({ text, subTitle, title, smallText, position, isWhite }) => {
   return (
-    <div className={cn('container', intro, position, { isWhite })}>
-      <span className={introSubTitle}>{subTitle}</span>
-      {title && <h2 className={introTitle}>{title}</h2>}
-      {text && <span className={cn(introText, smallText && introSmallText)}>{text}</span>}
+    <div className={cn('container', 'intro', position, { isWhite })}>
+      <span className={cn('introSubTitle')}>{subTitle}</span>
+      {title && <h2 className={cn('introTitle')}>{title}</h2>}
+      {text && <span className={cn('introText', smallText && 'introSmallText')}>{text}</span>}
     </div>
   );
 };

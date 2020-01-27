@@ -4,13 +4,12 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { business, businessText, businessTitle } = styles;
 
 const Business = ({ titleColor }) => {
   return (
-    <div className={business}>
-      <span className={cn(titleColor, businessTitle)}>We build great business</span>
-      <span className={businessText}>
+    <div className={cn('business')}>
+      <span className={cn(titleColor, 'businessTitle')}>We build great business</span>
+      <span className={cn('businessText')}>
         <span>
           Nisl condimentum id venenatis a. Nec tincidunt praesent semper feugiat nibh sed pulvinar
           proin gravida. Sollicitudin tempor id eu nisl nunc.
