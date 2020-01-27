@@ -1,2 +1,82 @@
 @import 'style/colors';
 
+.strategy {
+  max-width: 1440px;
+  margin: 0 auto 420px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 120px 30px;
+}
+
+.itemTextContainer {
+  padding-left: 147px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itemImageContainer {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    right: 0;
+    height: 20%;
+    bottom: -18%;
+    z-index: -1;
+  }
+}
+
+.itemImage {
+  width: 100%;
+}
+
+.itemTitle {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 40px;
+  color: $currant;
+  margin: 5px 0 18px;
+}
+
+.itemSubTitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.itemText {
+  font-size: 18px;
+  line-height: 29px;
+  color: #776C82;
+}
+
+.textContainer {
+  max-width: 465px;
+  display: block;
+}
+
+.pinkElement {
+  &:after {
+    background-color: $razzmatazz;
+  }
+}
+
+.greenElement {
+  &:after {
+    background-color: $green;
+  }
+}
+
+.purpleElement {
+  &:after {
+    background-color: $royalPurple;
+  }
+}
