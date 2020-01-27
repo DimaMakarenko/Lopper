@@ -13,93 +13,75 @@ import styles from './styles.module.scss';
 
 const currentYear = new Date().getFullYear();
 const cn = classNames.bind(styles);
-const {
-  footer,
-  footerContainer,
-  logo,
-  menu,
-  services,
-  contact,
-  follow,
-  blockTitle,
-  blockContent,
-  blockItem,
-  logoTitle,
-  logoSubTitle,
-  contactItem,
-  contactIcon,
-  socialMedia,
-  note
-} = styles;
 
 const Footer = () => {
   return (
-    <footer className={cn('block', footer)}>
-      <div className={cn('container', footerContainer)}>
-        <div className={logo}>
-          <span className={logoTitle}>Lopper</span>
-          <span className={logoSubTitle}>Eu augue ut lectus arcu bibendum at.</span>
+    <footer className={cn('block', 'footer')}>
+      <div className={cn('container', 'footerContainer')}>
+        <div className={cn('logo')}>
+          <span className={cn('logoTitle')}>Lopper</span>
+          <span className={cn('logoSubTitle')}>Eu augue ut lectus arcu bibendum at.</span>
         </div>
-        <div className={menu}>
-          <span className={blockTitle}>menu</span>
-          <ul className={blockContent}>
-            <li className={blockItem}>
+        <div className={cn('menu')}>
+          <span className={cn('blockTitle')}>menu</span>
+          <ul className={cn('blockContent')}>
+            <li className={cn('blockItem')}>
               <a href="/">Home</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">About</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">Services</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">News</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">Gallery</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">Contact</a>
             </li>
           </ul>
         </div>
-        <div className={services}>
-          <span className={blockTitle}>services</span>
-          <ul className={blockContent}>
-            <li className={blockItem}>
+        <div className={cn('services')}>
+          <span className={cn('blockTitle')}>services</span>
+          <ul className={cn('blockContent')}>
+            <li className={cn('blockItem')}>
               <a href="/">Lorem</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">Ipsum</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">Dolor</a>
             </li>
-            <li className={blockItem}>
+            <li className={cn('blockItem')}>
               <a href="/">Sit Amet</a>
             </li>
           </ul>
         </div>
-        <div className={contact}>
-          <span className={blockTitle}>contact</span>
-          <ul className={blockContent}>
-            <li className={contactItem}>
-              <div className={contactIcon}>
+        <div className={cn('contact')}>
+          <span className={cn('blockTitle')}>contact</span>
+          <ul className={cn('blockContent')}>
+            <li className={cn('contactItem')}>
+              <div className={cn('contactIcon')}>
                 <img src={mailIcon} alt="" />
               </div>
               <span>contact@lop.com</span>
             </li>
-            <li className={contactItem}>
-              <div className={contactIcon}>
+            <li className={cn('contactItem')}>
+              <div className={cn('contactIcon')}>
                 <img src={phoneIcon} alt="" />
               </div>
               <span>856 - 693 - 456</span>
             </li>
           </ul>
         </div>
-        <div className={follow}>
-          <span className={blockTitle}>follow</span>
-          <ul className={socialMedia}>
+        <div className={cn('follow')}>
+          <span className={cn('blockTitle')}>follow</span>
+          <ul className={cn('socialMedia')}>
             <li>
               <a href="/">
                 <img src={twitterIcon} alt="" />
@@ -127,7 +109,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={note}>
+        <div className={cn('note')}>
           {`© ${currentYear} Lopper by mariuszdaniel. All right reserved.`}
         </div>
       </div>

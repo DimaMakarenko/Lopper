@@ -10,8 +10,6 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const { features, featuresText, featuresBtn, sides, image1, image2 } = styles;
-
 // intro
 const title = 'Shaping the future';
 const subTitle = 'Benefits';
@@ -21,10 +19,10 @@ const text =
 const Features = () => {
   return (
     <section className={cn('container')}>
-      <div className={features}>
-        <div className={sides}>
+      <div className={cn('features')}>
+        <div className={cn('sides')}>
           <Intro title={title} subTitle={subTitle} text={text} smallText />
-          <div className={featuresText}>
+          <div className={cn('featuresText')}>
             <span>Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.</span>
             <span>Lectus vestibulum mattis ullamcorper velit sed ullamcorper.</span>
             <span>
@@ -33,13 +31,13 @@ const Features = () => {
             </span>
             <span>Posuere ac ut consequat semper viverra.</span>
           </div>
-          <button className={featuresBtn} type="button">
+          <button className={cn('featuresBtn')} type="button">
             Learn more
           </button>
         </div>
-        <div className={sides}>
-          <img src={featureImage1} alt="" className={image1} />
-          <img src={featureImage2} alt="" className={image2} />
+        <div className={cn('sides')}>
+          <img src={featureImage1} alt="" className={cn('image1')} />
+          <img src={featureImage2} alt="" className={cn('image2')} />
         </div>
       </div>
     </section>

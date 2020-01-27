@@ -9,43 +9,30 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const {
-  header,
-  headerContent,
-  pink,
-  headerTitle,
-  headerSubtitle,
-  headerScroll,
-  scrollImage,
-  subheader,
-  subImage,
-  subContent,
-  subText
-} = styles;
 
 const Header = () => {
   return (
     <>
-      <div className={cn('container', header)}>
+      <div className={cn('container', 'header')}>
         <NavBar isWhite />
-        <div className={headerContent}>
-          <span className={headerTitle}>
-            <span className={headerSubtitle}>What we do?</span>
+        <div className={cn('headerContent')}>
+          <span className={cn('headerTitle')}>
+            <span className={cn('headerSubtitle')}>What we do?</span>
             We grow
-            <span className={pink}>great business</span>
+            <span className={cn('pink')}>great business</span>
           </span>
-          <div className={headerScroll}>
+          <div className={cn('headerScroll')}>
             Scroll to see more
-            <img src={scrollIcon} alt="" className={scrollImage} />
+            <img src={scrollIcon} alt="" className={cn('scrollImage')} />
           </div>
         </div>
       </div>
-      <div className={subContent}>
+      <div className={cn('subContent')}>
         <div className={cn('container')}>
-          <div className={subheader}>
-            <span className={subText}>
+          <div className={cn('subheader')}>
+            <span className={cn('subText')}>
               Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.
-              <img src={arrowCircle} alt="" className={subImage} />
+              <img src={arrowCircle} alt="" className={cn('subImage')} />
             </span>
           </div>
         </div>

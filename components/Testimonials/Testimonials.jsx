@@ -16,54 +16,33 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const {
-  avatar,
-  testimonial,
-  testimonialText,
-  testimonialContainers,
-  testimonialName,
-  testimonialCompany,
-  testimonialUser,
-  faces,
-  faceItems,
-  faceItem1,
-  faceItem2,
-  faceItem3,
-  faceItem4,
-  faceItem5,
-  faceItem6,
-  faceItem7,
-  arrows,
-  arrowLeft,
-  arrowRight
-} = styles;
 
 const Testimonials = ({ image }) => {
   return (
-    <section className={testimonial}>
-      <div className={cn('container', { testimonialContainers })}>
-        <div className={avatar}>
+    <section className={cn('testimonial')}>
+      <div className={cn('container', 'testimonialContainers')}>
+        <div className={cn('avatar')}>
           <img src={image} alt="" />
         </div>
-        <span className={testimonialText}>
+        <span className={cn('testimonialText')}>
           Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
         </span>
-        <div className={testimonialUser}>
-          <span className={testimonialName}>Kerry Johne</span>
-          <span className={testimonialCompany}>Some Company</span>
+        <div className={cn('testimonialUser')}>
+          <span className={cn('testimonialName')}>Kerry Johne</span>
+          <span className={cn('testimonialCompany')}>Some Company</span>
         </div>
-        <div className={faces}>
-          <img src={face1} alt="" className={cn(faceItems, faceItem1)} />
-          <img src={face2} alt="" className={cn(faceItems, faceItem2)} />
-          <img src={face3} alt="" className={cn(faceItems, faceItem3)} />
-          <img src={face4} alt="" className={cn(faceItems, faceItem4)} />
-          <img src={face5} alt="" className={cn(faceItems, faceItem5)} />
-          <img src={face6} alt="" className={cn(faceItems, faceItem6)} />
-          <img src={face7} alt="" className={cn(faceItems, faceItem7)} />
+        <div className={cn('faces')}>
+          <img src={face1} alt="" className={cn('faceItems', 'faceItem1')} />
+          <img src={face2} alt="" className={cn('faceItems', 'faceItem2')} />
+          <img src={face3} alt="" className={cn('faceItems', 'faceItem3')} />
+          <img src={face4} alt="" className={cn('faceItems', 'faceItem4')} />
+          <img src={face5} alt="" className={cn('faceItems', 'faceItem5')} />
+          <img src={face6} alt="" className={cn('faceItems', 'faceItem6')} />
+          <img src={face7} alt="" className={cn('faceItems', 'faceItem7')} />
         </div>
-        <div className={arrows}>
-          <img src={arrowLeftIcon} alt="" className={arrowLeft} />
-          <img src={arrowRightIcon} alt="" className={arrowRight} />
+        <div className={cn('arrows')}>
+          <img src={arrowLeftIcon} alt="" className={cn('arrowLeft')} />
+          <img src={arrowRightIcon} alt="" className={cn('arrowRight')} />
         </div>
       </div>
     </section>

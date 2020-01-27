@@ -8,7 +8,6 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { clients, clientsContainer, logos, business } = styles;
 
 // intro
 const title = 'What we  do more than you can \n imagine, belive us.';
@@ -16,13 +15,13 @@ const subTitle = 'What we do';
 
 const Clients = () => {
   return (
-    <section className={clientsContainer}>
+    <section className={cn('clientsContainer')}>
       <Intro subTitle={subTitle} title={title} isWhite />
       <div className={cn('container', 'clients')}>
-        <div className={business}>
+        <div className={cn('business')}>
           <Business titleColor="white" />
         </div>
-        <div className={logos}>
+        <div className={cn('logos')}>
           <Logos isWhite />
         </div>
       </div>

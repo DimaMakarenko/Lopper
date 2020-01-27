@@ -9,13 +9,12 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { logos, logosTitle, logosItems, white } = styles;
 
 const Logos = ({ isWhite }) => {
   return (
-    <div className={logos}>
-      <span className={cn(logosTitle, isWhite && white)}>Our clients</span>
-      <span className={logosItems}>
+    <div className={cn('logos')}>
+      <span className={cn('logosTitle', isWhite && 'white')}>Our clients</span>
+      <span className={cn('logosItems')}>
         {isWhite ? (
           <>
             <img src={codePenWhite} alt="" />

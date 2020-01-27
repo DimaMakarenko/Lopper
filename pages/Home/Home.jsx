@@ -17,19 +17,18 @@ import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
-const { home } = styles;
 
 const Home = () => {
   return (
     <>
-      <header className={home}>
+      <header className={cn('home')}>
         <Header isWhite />
       </header>
       <main>
         <OurServices services={HOME_SERVICES} />
         <Features />
         <Clients />
-        <Evaluation bgColor="currant" showNumber />
+        <Evaluation bgColor="currant" />
         <Testimonials image={testimonialsAvatar} />
         <Subscribe />
       </main>
