@@ -1,4 +1,5 @@
-@import '../../../../style/colors';
+@import 'style/colors';
+@import 'style/media';
 
 .ourServices {
   padding-bottom: 150px;
@@ -21,6 +22,9 @@
     max-width: 750px;
     display: block;
   }
+  @media (max-width: $extraLarge) {
+    padding: 70px;
+  }
 }
 
 .quoteMan {
@@ -31,6 +35,9 @@
 .quoteImage {
   position: relative;
   margin-right: -30px;
+  @media (max-width: $extraLarge) {
+    width: 400px;
+  }
 }
 .quotePerson {
   margin: 55px 0 55px 100px;

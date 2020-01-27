@@ -1,8 +1,14 @@
 @import 'style/colors';
+@import 'style/media';
 
 .clients {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: $extraLarge) {
+    max-width: 1000px;
+    grid-template-columns: 5fr 4fr;
+
+  }
 }
 
 .business {
@@ -29,5 +35,8 @@
     bottom: -99px;
     right: 0;
     z-index: 3;
+  }
+  @media (max-width: $extraLarge) {
+    padding-left: 30px;
   }
 }

@@ -31,10 +31,10 @@ const Strategy = () => {
               surprised known for every by of there until road,
             </span>
           </div>
-          <div className={cn('itemImageContainer', 'pinkElement')}>
+          <div className={cn('itemImageContainer', 'pinkElement', 'leftImage')}>
             <img src={strategyImage1} alt="" className={cn('itemImage')} />
           </div>
-          <div className={cn('itemImageContainer', 'greenElement')}>
+          <div className={cn('itemImageContainer', 'greenElement', 'rightImage')}>
             <img src={strategyImage2} alt="" className={cn('itemImage')} />
           </div>
           <div className={cn('itemTextContainer')}>
@@ -57,7 +57,7 @@ const Strategy = () => {
               surprised known for every by of there until road,
             </span>
           </div>
-          <div className={cn('itemImageContainer', 'purpleElement')}>
+          <div className={cn('itemImageContainer', 'purpleElement', 'leftImage')}>
             <img src={strategyImage3} alt="" className={cn('itemImage')} />
           </div>
         </div>

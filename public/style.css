@@ -15,13 +15,19 @@ ul {
 }
 
 .container {
-    max-width: 1145px;
+    max-width: 1140px;
     margin: 0 auto;
     position: relative;
 }
 
 .block {
     padding-top: 100px;
+}
+
+@media screen and (max-width: 1200px){
+    .block{
+        padding-top: 75px;
+    }
 }
 
 .pinkText {

@@ -1,9 +1,16 @@
 @import 'style/colors';
+@import 'style/media';
 
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 150px;
+  @media (max-width: $extraLarge) {
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 4fr 3fr;
+    padding-left: 50px;
+  }
 }
 .sides {
   position: relative;
@@ -39,13 +46,20 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .image1 {
   position: absolute;
   top: 0;
   right: 0;
+  @media (max-width: $extraLarge) {
+    width: 380px;
+  }
 }
 .image2 {
   left: 0;
   bottom: 0;
   position: absolute;
+  @media (max-width: $extraLarge) {
+    width: 320px;
+  }
 }

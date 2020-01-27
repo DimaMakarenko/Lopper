@@ -1,4 +1,5 @@
 @import 'style/colors';
+@import 'style/media';
 
 .clientsContainer {
   background-color: $royalPurple;
@@ -15,6 +16,9 @@
 .business {
   padding: 100px 0;
   position: relative;
+  @media (max-width: $extraLarge){
+    padding-left: 50px;
+  }
 }
 
 .logos {
@@ -31,4 +35,5 @@
     top: 0;
     right: -9998px;
   }
+
 }

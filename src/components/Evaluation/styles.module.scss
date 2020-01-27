@@ -1,4 +1,5 @@
 @import 'style/colors';
+@import 'style/media';
 
 .royalPurple {
   background-color: $royalPurple;
@@ -15,10 +16,16 @@
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(361px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-column-gap: 30px;
-  height: 361px;
+  height: 360px;
   padding-top: 50px;
+  @media (max-width: $extraLarge) {
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-column-gap: 20px;
+    height: 320px;
+  }
 }
 
 .item {

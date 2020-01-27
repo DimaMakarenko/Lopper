@@ -22,7 +22,7 @@ const Testimonials = ({ image }) => {
     <section className={cn('testimonial')}>
       <div className={cn('container', 'testimonialContainers')}>
         <div className={cn('avatar')}>
-          <img src={image} alt="" />
+          <img src={image} alt="" className={cn('mainAvatar')} />
         </div>
         <span className={cn('testimonialText')}>
           Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.

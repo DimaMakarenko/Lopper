@@ -22,14 +22,14 @@ const Gallery = () => {
               <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage1} alt="" className={cn('images', 'image1')} />
+            <img src={galleryImage1} alt="" className={cn('images', 'image1', 'halfImage')} />
           </div>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
               <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage2} alt="" className={cn('images', 'image2')} />
+            <img src={galleryImage2} alt="" className={cn('images', 'image2', 'halfImage')} />
           </div>
         </div>
         <div className={cn('lines')}>
@@ -47,14 +47,14 @@ const Gallery = () => {
               <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage4} alt="" className={cn('images', 'image4')} />
+            <img src={galleryImage4} alt="" className={cn('images', 'image4', 'halfImage')} />
           </div>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
               <span className={cn('galleryTitle')}>Photo name</span>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage5} alt="" className={cn('images', 'image5')} />
+            <img src={galleryImage5} alt="" className={cn('images', 'image5', 'halfImage')} />
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 @import 'style/colors';
+@import 'style/media';
 
 .testimonial {
   background: #fcfcfc;
@@ -16,12 +17,22 @@
   color: $accentColor2;
   margin-bottom: 50px;
   position: relative;
+  @media (max-width: $extraLarge) {
+  max-width: 1000px;
+  }
+
+}
+.mainAvatar{
+  @media (max-width: $extraLarge) {
+    width: 400px;
+  }
 }
 .avatar {
   margin-top: -127px;
   z-index: 2;
   margin-bottom: 116px;
   position: relative;
+
   &:after {
     font-family: 'Libre Baskerville', serif;
     content: '\201c';
@@ -32,7 +43,12 @@
     transform: translateX(-50%);
     font-size: 250px;
     line-height: 0;
+    @media (max-width: $extraLarge) {
+    font-size: 200px;
+      bottom: -60px;
+    }
   }
+
 }
 .testimonialUser {
   font-weight: 800;

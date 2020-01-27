@@ -1,8 +1,13 @@
 @import 'style/colors';
+@import 'style/media';
 
 .strategy {
   max-width: 1440px;
   margin: 0 auto 420px;
+  @media (max-width: $extraLarge) {
+    max-width: 1000px;
+    margin-bottom: 300px;
+  }
 }
 
 .items {
@@ -16,24 +21,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: $extraLarge) {
+    padding-left: 80px;
+  }
 }
 
 .itemImageContainer {
   position: relative;
-
   &:after {
     content: '';
     position: absolute;
     width: 80%;
-    right: 0;
     height: 20%;
     bottom: -18%;
     z-index: -1;
+    @media (max-width: $extraLarge) {
+      bottom: -15%;
+    }
   }
 }
 
 .itemImage {
   width: 100%;
+
+  @media (max-width: $extraLarge) {
+    width: 400px;
+  }
 }
 
 .itemTitle {
@@ -78,5 +91,17 @@
 .purpleElement {
   &:after {
     background-color: $royalPurple;
+  }
+}
+.leftImage{
+  margin-left: auto;
+  &:after{
+    right: 0;
+  }
+}
+.rightImage{
+  margin-right: auto;
+  &:after{
+    left: 0;
   }
 }

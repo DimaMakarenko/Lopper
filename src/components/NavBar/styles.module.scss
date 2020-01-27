@@ -1,4 +1,5 @@
 @import 'style/colors';
+@import 'style/media';
 
 .navBar {
   color: $accentColor2;
@@ -11,6 +12,9 @@
   line-height: 30px;
   letter-spacing: 2px;
   padding-top: 60px;
+  @media (max-width: $extraLarge){
+    max-width: 1000px;
+  }
   a {
     color: $accentColor2;
   }
