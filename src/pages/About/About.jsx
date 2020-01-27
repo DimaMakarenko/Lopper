@@ -7,6 +7,7 @@ import Footer from 'components/Footer/Footer';
 import Evaluation from 'components/Evaluation/Evaluation';
 import Objective from 'components/Objective/Objective';
 import Clients from 'pages/About/component/Clients/Clients';
+import Virtues from 'components/Virtues/Virtues';
 // image
 import headerImage from 'image/about-header.png';
 import testimonialsAvatar from 'image/avatars/avatar1.png';
@@ -24,6 +25,7 @@ const About = () => {
     <main className={cn('about')}>
       <Header title={title} image={headerImage} />
       <Objective />
+      <Virtues />
       <Clients />
       <Evaluation bgColor="royalPurple" showNumber={false} />
       <Testimonials image={testimonialsAvatar} />
