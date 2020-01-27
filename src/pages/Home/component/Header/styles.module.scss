@@ -1,4 +1,5 @@
 @import 'style/colors';
+@import 'style/media';
 
 .header {
   color: $white;
@@ -12,13 +13,20 @@
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  @media (max-width: $extraLarge) {
+    max-width: 950px;
+    margin-left: 50px;
+  }
 }
 
 .headerTitle {
   font-weight: 900;
   font-size: 99px;
   line-height: 118px;
+  @media (max-width: $extraLarge) {
+    font-size: 80px;
+    line-height: 80px;
+  }
 }
 
 .headerSubtitle {
@@ -39,11 +47,19 @@
   line-height: 26px;
   letter-spacing: 6px;
   text-transform: uppercase;
+  @media (max-width: $extraLarge) {
+    font-size: 10px;
+
+  }
 }
 
 .scrollImage {
   transform: rotate(-90deg) translateX(50%);
   margin-left: 45px;
+  @media (max-width: $extraLarge) {
+    margin-left: 25px;
+
+  }
 }
 
 .pink {
@@ -55,7 +71,6 @@
 .subContent {
   position: absolute;
   bottom: 15%;
-  width: 100%;
 }
 
 .subheader {
@@ -91,6 +106,9 @@
   border-left: none;
   box-sizing: border-box;
   cursor: pointer;
+  @media (max-width: $extraLarge) {
+    padding: 20px 30px 20px 50px;
+  }
 }
 
 .subImage {
