@@ -23,16 +23,19 @@ const introSubTitle = 'WE are';
 
 const Team = () => {
   return (
-    <main>
+    <>
       <Header title={title} image={headerImage} />
-      <section className={cn('introContainers')}>
-        <Intro text={introText} subTitle={introSubTitle} title={title} position="center" />
-      </section>
-      <OurTeam />
-      <Testimonials image={testimonialsAvatar} />
-      <Subscribe />
+
+      <main>
+        <section className={cn('introContainers')}>
+          <Intro text={introText} subTitle={introSubTitle} title={title} position="center" />
+        </section>
+        <OurTeam />
+        <Testimonials image={testimonialsAvatar} />
+        <Subscribe />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

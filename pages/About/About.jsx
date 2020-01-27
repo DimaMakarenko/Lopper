@@ -22,16 +22,18 @@ const title = 'About us';
 
 const About = () => {
   return (
-    <main className={cn('about')}>
+    <>
       <Header title={title} image={headerImage} />
-      <Objective />
-      <Virtues />
-      <Clients />
-      <Evaluation bgColor="royalPurple" showNumber={false} />
-      <Testimonials image={testimonialsAvatar} />
-      <Subscribe />
+      <main className={cn('about')}>
+        <Objective />
+        <Virtues />
+        <Clients />
+        <Evaluation bgColor="royalPurple" showNumber={false} />
+        <Testimonials image={testimonialsAvatar} />
+        <Subscribe />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 
