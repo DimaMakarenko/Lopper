@@ -12,11 +12,15 @@
   line-height: 30px;
   letter-spacing: 2px;
   padding-top: 60px;
+
+  a {
+    color: $accentColor2;
+  }
   @media (max-width: $extraLarge){
     max-width: 1000px;
   }
-  a {
-    color: $accentColor2;
+  @media (max-width: $large){
+    max-width: 700px;
   }
 }
 .navBarWhite {
@@ -31,6 +35,9 @@
   line-height: 43px;
 }
 .menu {
+  @media (max-width: $large) {
+    display: none;
+  }
 }
 .menuItem {
   margin-right: 54px;

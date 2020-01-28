@@ -29,7 +29,7 @@ const Evaluation = ({ bgColor }) => {
             key={elem}
             onClick={() => setActiveItem(index)}
           >
-            <img src={reactIcon} alt="" />
+            <img src={reactIcon} alt="" className={cn('itemImage')} />
             <span className={cn('itemTitle')}>{elem}</span>
             <span className={cn('itemText')}>
               Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat
