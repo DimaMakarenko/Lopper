@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Lopper/static/css/main.fe41d177.chunk.css",
-    "main.js": "/Lopper/static/js/main.bd507f46.chunk.js",
-    "main.js.map": "/Lopper/static/js/main.bd507f46.chunk.js.map",
+    "main.js": "/Lopper/static/js/main.abe9db32.chunk.js",
+    "main.js.map": "/Lopper/static/js/main.abe9db32.chunk.js.map",
     "runtime-main.js": "/Lopper/static/js/runtime-main.6769eae5.js",
     "runtime-main.js.map": "/Lopper/static/js/runtime-main.6769eae5.js.map",
     "static/js/2.3cdd4b26.chunk.js": "/Lopper/static/js/2.3cdd4b26.chunk.js",
     "static/js/2.3cdd4b26.chunk.js.map": "/Lopper/static/js/2.3cdd4b26.chunk.js.map",
     "index.html": "/Lopper/index.html",
-    "precache-manifest.363f4ce788a2c155b51ca2c6fade6dad.js": "/Lopper/precache-manifest.363f4ce788a2c155b51ca2c6fade6dad.js",
+    "precache-manifest.8edd68ced8ea1dc2999473feca18f879.js": "/Lopper/precache-manifest.8edd68ced8ea1dc2999473feca18f879.js",
     "service-worker.js": "/Lopper/service-worker.js",
     "static/css/main.fe41d177.chunk.css.map": "/Lopper/static/css/main.fe41d177.chunk.css.map",
     "static/js/2.3cdd4b26.chunk.js.LICENSE": "/Lopper/static/js/2.3cdd4b26.chunk.js.LICENSE",
@@ -65,6 +65,6 @@
     "static/js/runtime-main.6769eae5.js",
     "static/js/2.3cdd4b26.chunk.js",
     "static/css/main.fe41d177.chunk.css",
-    "static/js/main.bd507f46.chunk.js"
+    "static/js/main.abe9db32.chunk.js"
   ]
 }
