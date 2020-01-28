@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45fc7e7ea4e1fab516dc7332709b8832",
+    "revision": "15dd17eab4e3521f7e1fc62555eaf6fa",
     "url": "/Lopper/index.html"
   },
   {
-    "revision": "d12662b4f6db91025b7c",
+    "revision": "2ea39a0099a22bc29587",
     "url": "/Lopper/static/css/main.fe41d177.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Lopper/static/js/2.3cdd4b26.chunk.js.LICENSE"
   },
   {
-    "revision": "d12662b4f6db91025b7c",
-    "url": "/Lopper/static/js/main.90482e4c.chunk.js"
+    "revision": "2ea39a0099a22bc29587",
+    "url": "/Lopper/static/js/main.de1c2ae2.chunk.js"
   },
   {
     "revision": "c0370b0bbb1b4448bf28",
