@@ -24,7 +24,7 @@ const OurServices = ({ services }) => {
 };
 
 OurServices.propTypes = {
-  services: PropTypes.arrayOf(PropTypes.object)
+  services: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default OurServices;

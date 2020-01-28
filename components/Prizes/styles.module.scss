@@ -12,6 +12,10 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+  @media (max-width:$large) {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    transform: translateY(50px);
+  }
 }
 
 .prizeItem {
@@ -22,6 +26,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width:$large) {
+    font-size: 80px;
+    line-height: 60px;
+  }
 }
 
 .prizeName {

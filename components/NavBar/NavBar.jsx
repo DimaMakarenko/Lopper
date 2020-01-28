@@ -15,7 +15,7 @@ const NavBar = ({ isWhite }) => {
   return (
     <div className={cn('container', 'navBar', isWhite && 'navBarWhite')}>
       <div className={cn('logo')}>Lopper</div>
-      <nav>
+      <nav className={cn('menu')}>
         <Link to="/home" className={cn('menuItem')}>
           Home
         </Link>

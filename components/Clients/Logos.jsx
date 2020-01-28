@@ -17,21 +17,21 @@ const Logos = ({ isWhite }) => {
       <span className={cn('logosItems')}>
         {isWhite ? (
           <>
-            <img src={codePenWhite} alt="" />
-            <img src={dribleWhite} alt="" />
-            <img src={dribleWhite} alt="" />
-            <img src={codePenWhite} alt="" />
-            <img src={codePenWhite} alt="" />
-            <img src={dribleWhite} alt="" />
+            <img src={codePenWhite} alt="" className={cn('logosImage')} />
+            <img src={dribleWhite} alt="" className={cn('logosImage')} />
+            <img src={dribleWhite} alt="" className={cn('logosImage')} />
+            <img src={codePenWhite} alt="" className={cn('logosImage')} />
+            <img src={codePenWhite} alt="" className={cn('logosImage')} />
+            <img src={dribleWhite} alt="" className={cn('logosImage')} />
           </>
         ) : (
           <>
-            <img src={codePentColor} alt="" />
-            <img src={dribleColor} alt="" />
-            <img src={dribleColor} alt="" />
-            <img src={codePentColor} alt="" />
-            <img src={codePentColor} alt="" />
-            <img src={dribleColor} alt="" />
+            <img src={codePentColor} alt="" className={cn('logosImage')} />
+            <img src={dribleColor} alt="" className={cn('logosImage')} />
+            <img src={dribleColor} alt="" className={cn('logosImage')} />
+            <img src={codePentColor} alt="" className={cn('logosImage')} />
+            <img src={codePentColor} alt="" className={cn('logosImage')} />
+            <img src={dribleColor} alt="" className={cn('logosImage')} />
           </>
         )}
       </span>

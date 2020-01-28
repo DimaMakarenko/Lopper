@@ -5,6 +5,9 @@
   background-color: $royalPurple;
   color: $white;
   padding-bottom: 300px;
+  @media (max-width: $large) {
+    padding-bottom: 200px;
+  }
 }
 
 .currant {
@@ -12,6 +15,9 @@
   color: $white;
   padding-bottom: 300px;
   padding-top: 220px;
+  @media (max-width: $large) {
+    padding: 120px 0 150px;
+  }
 }
 
 .items {
@@ -26,6 +32,12 @@
     grid-column-gap: 20px;
     height: 320px;
   }
+  @media (max-width: $large) {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    grid-row-gap: 30px;
+    height: auto;
+     }
 }
 
 .item {
@@ -36,9 +48,8 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transition: 0.2s;
-
-  img {
-    width: 54px;
+  @media (max-width: $large) {
+    padding: 30px;
   }
 }
 
@@ -56,4 +67,10 @@
 .itemText {
   font-size: 16.2px;
   line-height: 26px;
+}
+.itemImage{
+  width: 54px;
+  @media (max-width: $large) {
+    width: 40px;
+  }
 }

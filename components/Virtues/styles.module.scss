@@ -13,6 +13,9 @@
 .virtuesTitle {
   padding: 80px 0;
   position: relative;
+  @media (max-width: $large) {
+    padding-bottom: 0;
+  }
 }
 
 .virtuesContainer {
@@ -106,5 +109,8 @@
   transform: translateY(-50%);
   @media (max-width: $extraLarge) {
     height: 500px;
+  }
+  @media (max-width: $large) {
+    display: none;
   }
 }

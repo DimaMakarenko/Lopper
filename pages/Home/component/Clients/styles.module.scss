@@ -35,8 +35,15 @@
     bottom: -99px;
     right: 0;
     z-index: 3;
+    @media (max-width: $large) {
+      height: 50px;
+      bottom: -49px;
+    }
   }
   @media (max-width: $extraLarge) {
     padding-left: 30px;
+  }
+  @media (max-width: $large) {
+    padding: 50px 0 50px 30px;
   }
 }

@@ -4,6 +4,9 @@
 .testimonial {
   background: #fcfcfc;
   margin-bottom: 130px;
+  @media (max-width: $large) {
+    margin-bottom: 0;
+  }
 }
 .faces {
   position: absolute;
@@ -26,6 +29,10 @@
   @media (max-width: $extraLarge) {
     width: 400px;
   }
+  @media (max-width: $large) {
+    width: 300px;
+  }
+
 }
 .avatar {
   margin-top: -127px;
@@ -48,7 +55,9 @@
       bottom: -60px;
     }
   }
-
+  @media (max-width: $large) {
+    margin-top: -50px;
+  }
 }
 .testimonialUser {
   font-weight: 800;
@@ -62,6 +71,11 @@
   line-height: 64px;
   text-align: center;
   margin-bottom: 30px;
+  @media (max-width: $large){
+    font-size: 30px;
+    line-height: 50px;
+    max-width: 500px;
+  }
 }
 .testimonialName {
   font-weight: bold;
@@ -85,6 +99,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: $large) {
+    max-width: 650px;
+  }
 }
 .arrowRight,
 .arrowLeft {
@@ -93,6 +110,9 @@
 
 .faceItems {
   position: absolute;
+  @media (max-width: $large){
+    max-width: 150px;
+  }
 }
 .faceItem1 {
   top: 3%;

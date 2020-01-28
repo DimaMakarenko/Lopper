@@ -18,15 +18,17 @@
   font-size: 22.5px;
   line-height: 40px;
   font-style: italic;
-  span {
-    max-width: 750px;
-    display: block;
-  }
   @media (max-width: $extraLarge) {
     padding: 70px;
   }
 }
-
+.quoteText{
+  max-width: 750px;
+  display: block;
+  @media (max-width: $large){
+    width: 500px;
+  }
+}
 .quoteMan {
   position: absolute;
   right: 0;
@@ -37,6 +39,9 @@
   margin-right: -30px;
   @media (max-width: $extraLarge) {
     width: 400px;
+  }
+  @media (max-width: $large){
+    width: 250px;
   }
 }
 .quotePerson {
