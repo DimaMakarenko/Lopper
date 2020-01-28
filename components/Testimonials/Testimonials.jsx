@@ -24,9 +24,9 @@ const Testimonials = ({ image }) => {
         <div className={cn('avatar')}>
           <img src={image} alt="" className={cn('mainAvatar')} />
         </div>
-        <span className={cn('testimonialText')}>
+        <p className={cn('testimonialText')}>
           Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
-        </span>
+        </p>
         <div className={cn('testimonialUser')}>
           <span className={cn('testimonialName')}>Kerry Johne</span>
           <span className={cn('testimonialCompany')}>Some Company</span>
@@ -41,8 +41,12 @@ const Testimonials = ({ image }) => {
           <img src={face7} alt="" className={cn('faceItems', 'faceItem7')} />
         </div>
         <div className={cn('arrows')}>
-          <img src={arrowLeftIcon} alt="" className={cn('arrowLeft')} />
-          <img src={arrowRightIcon} alt="" className={cn('arrowRight')} />
+          <span>
+            <img src={arrowLeftIcon} alt="" className={cn('arrowLeft')} />
+          </span>
+          <span>
+            <img src={arrowRightIcon} alt="" className={cn('arrowRight')} />
+          </span>
         </div>
       </div>
     </section>

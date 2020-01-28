@@ -34,7 +34,9 @@ const NavBar = ({ isWhite }) => {
       </nav>
       <div className={cn('phone')}>
         <img src={isWhite ? phoneIcoWhite : phoneIcoBlack} alt="phone" />
-        <div>(01) 666 - 693 - 456</div>
+        <div>
+          <a href="tel:01-666-693-456">(01) 666 - 693 - 456</a>
+        </div>
       </div>
       <div className={cn('burger')}>
         <span className={cn('burgerIcon', isWhite && 'burgerIconWhite')} />
