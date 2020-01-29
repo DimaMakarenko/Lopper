@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import NavBar from 'components/NavBar/NavBar';
 // image
 import scrollIcon from 'image/scroll.svg';
@@ -14,13 +14,13 @@ const Header = () => {
   return (
     <>
       <div className={cn('container', 'header')}>
-        <NavBar isWhite />
+        <NavBar colorText="white" />
         <div className={cn('headerContent')}>
-          <span className={cn('headerTitle')}>
+          <p className={cn('headerTitle')}>
             <span className={cn('headerSubtitle')}>What we do?</span>
             We grow
             <span className={cn('pink')}>great business</span>
-          </span>
+          </p>
           <div className={cn('headerScroll')}>
             Scroll to see more
             <img src={scrollIcon} alt="" className={cn('scrollImage')} />
@@ -30,10 +30,12 @@ const Header = () => {
       <div className={cn('subContent')}>
         <div className={cn('container')}>
           <div className={cn('subheader')}>
-            <span className={cn('subText')}>
+            <p className={cn('subText')}>
               Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.
-              <img src={arrowCircle} alt="" className={cn('subImage')} />
-            </span>
+              <span>
+                <img src={arrowCircle} alt="" className={cn('subImage')} />
+              </span>
+            </p>
           </div>
         </div>
       </div>

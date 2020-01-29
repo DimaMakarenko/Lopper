@@ -11,10 +11,10 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const NavBar = ({ isWhite }) => {
+const NavBar = ({ colorText }) => {
   return (
-    <div className={cn('container', 'navBar', isWhite && 'navBarWhite')}>
-      <div className={cn('logo')}>Lopper</div>
+    <div className={cn('container', 'navBar', colorText)}>
+      <h2 className={cn('logo')}>Lopper</h2>
       <nav className={cn('menu')}>
         <Link to="/home" className={cn('menuItem')}>
           Home
@@ -33,20 +33,22 @@ const NavBar = ({ isWhite }) => {
         </Link>
       </nav>
       <div className={cn('phone')}>
-        <img src={isWhite ? phoneIcoWhite : phoneIcoBlack} alt="phone" />
+        <span>
+          <img src={colorText === 'white' ? phoneIcoWhite : phoneIcoBlack} alt="phone" />
+        </span>
         <div>
           <a href="tel:01-666-693-456">(01) 666 - 693 - 456</a>
         </div>
       </div>
       <div className={cn('burger')}>
-        <span className={cn('burgerIcon', isWhite && 'burgerIconWhite')} />
+        <span className={cn('burgerIcon', colorText && 'burgerIconWhite')} />
       </div>
     </div>
   );
 };
 
 NavBar.propTypes = {
-  isWhite: PropTypes.bool.isRequired
+  colorText: PropTypes.oneOf(['white', 'black'])
 };
 
 export default NavBar;

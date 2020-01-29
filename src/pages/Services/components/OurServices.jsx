@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Intro from 'components/Intro/Intro';
 import Service from 'components/Services/Service';
 // styles
@@ -17,7 +17,7 @@ const text =
 const OurServices = ({ services }) => {
   return (
     <section className={cn('block', 'ourServices')}>
-      <Intro subTitle={subTitle} text={text} isWhite position="center" title={title} />
+      <Intro subTitle={subTitle} text={text} colorText="white" position="center" title={title} />
       <Service services={services} />
     </section>
   );

@@ -1,13 +1,13 @@
 import React from 'react';
-// component
+// components
 import Footer from 'components/Footer/Footer';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Testimonials from 'components/Testimonials/Testimonials';
-import OurServices from 'pages/Home/component/OurServices/OurServices';
-import Header from 'pages/Home/component/Header/Header';
+import OurServices from 'pages/Home/components/OurServices/OurServices';
+import Header from 'pages/Home/components/Header/Header';
 import Evaluation from 'components/Evaluation/Evaluation';
 import Features from 'components/Features/Features';
-import Clients from 'pages/Home/component/Clients/Clients';
+import Clients from 'pages/Home/components/Clients/Clients';
 // image
 import testimonialsAvatar from 'image/avatars/avatar3.png';
 // const
@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <header className={cn('home')}>
-        <Header isWhite />
+        <Header />
       </header>
       <main>
         <OurServices services={HOME_SERVICES} />

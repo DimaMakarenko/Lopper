@@ -1,12 +1,12 @@
 import React from 'react';
-// component
+// components
 import Header from 'components/Header/Header';
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
 import Evaluation from 'components/Evaluation/Evaluation';
 import Objective from 'components/Objective/Objective';
-import Clients from 'pages/About/component/Clients/Clients';
+import Clients from 'pages/About/components/Clients/Clients';
 import Virtues from 'components/Virtues/Virtues';
 // image
 import headerImage from 'image/about-header.png';

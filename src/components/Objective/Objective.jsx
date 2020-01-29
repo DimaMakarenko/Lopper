@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Intro from 'components/Intro/Intro';
 // styles
 import classNames from 'classnames/bind';
@@ -19,20 +19,20 @@ const Objective = () => {
         <div className={cn('objective')}>
           <div className={cn('item')}>
             <h4 className={cn('blockTitle')}>Our objectives</h4>
-            <span>
+            <p>
               Amet consectetur adipiscing elit pellentesque habitant morbi. Fermentum et
               sollicitudin ac orci phasellus. Dolor sit amet consectetur adipiscing elit duis.
               Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit.
-            </span>
+            </p>
           </div>
           <div className={cn('item')}>
             <h4 className={cn('blockTitle')}>Our story</h4>
-            <span>
+            <p>
               Etiam dignissim diam quis enim lobortis. Egestas sed sed risus pretium quam vulputate
               dignissim. Eleifend quam adipiscing vitae proin sagittis. Pharetra pharetra massa
               massa ultricies. Elementum eu facilisis sed odio morbi. Morbi tincidunt augue interdum
               velit.
-            </span>
+            </p>
           </div>
         </div>
       </div>

@@ -11,7 +11,9 @@ const Image = ({ image, children }) => {
     <div className={cn('imageContainer')}>
       {image ? (
         <>
-          <img src={image} alt="" className={cn('headerImage')} />
+          <span>
+            <img src={image} alt="" className={cn('headerImage')} />
+          </span>
           {children}
         </>
       ) : (

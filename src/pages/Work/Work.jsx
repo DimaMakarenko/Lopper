@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
 import Footer from 'components/Footer/Footer';
@@ -14,7 +14,7 @@ const title = 'Gallery';
 const Work = () => {
   return (
     <>
-      <Header title={title} image={false} isWhite={false} />
+      <Header title={title} image={false} colorText="black" />
       <main>
         <Gallery />
         <Testimonials image={testimonialsAvatar} />

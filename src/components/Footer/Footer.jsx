@@ -19,8 +19,8 @@ const Footer = () => {
     <footer className={cn('block', 'footer')}>
       <div className={cn('container', 'footerContainer')}>
         <div className={cn('logo')}>
-          <span className={cn('logoTitle')}>Lopper</span>
-          <span className={cn('logoSubTitle')}>Eu augue ut lectus arcu bibendum at.</span>
+          <h2 className={cn('logo Title')}>Lopper</h2>
+          <p className={cn('logoSubTitle')}>Eu augue ut lectus arcu bibendum at.</p>
         </div>
         <div className={cn('menu')}>
           <span className={cn('blockTitle')}>menu</span>
@@ -113,9 +113,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={cn('note')}>
+        <p className={cn('note')}>
           {`© ${currentYear} Lopper by mariuszdaniel. All right reserved.`}
-        </div>
+        </p>
       </div>
     </footer>
   );

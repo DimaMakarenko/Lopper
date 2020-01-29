@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // proptypes
 import PropTypes from 'prop-types';
-// component
+// components
 import Intro from 'components/Intro/Intro';
 // image
 import reactIcon from 'image/react.svg';
@@ -21,7 +21,7 @@ const Evaluation = ({ bgColor }) => {
   const [activeItem, setActiveItem] = useState(0);
   return (
     <section className={cn('block', bgColor)}>
-      <Intro subTitle={subTitle} text={text} isWhite />
+      <Intro subTitle={subTitle} text={text} colorText="white" />
       <div className={cn('container', 'items')}>
         {EVALUATE.map((elem, index) => (
           <div
@@ -31,10 +31,10 @@ const Evaluation = ({ bgColor }) => {
           >
             <img src={reactIcon} alt="" className={cn('itemImage')} />
             <span className={cn('itemTitle')}>{elem}</span>
-            <span className={cn('itemText')}>
+            <p className={cn('itemText')}>
               Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat
               pretium nibh ipsum consequat nisl vel pretium.
-            </span>
+            </p>
           </div>
         ))}
       </div>

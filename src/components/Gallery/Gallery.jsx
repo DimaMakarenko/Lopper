@@ -19,23 +19,27 @@ const Gallery = () => {
         <div className={cn('lines')}>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
-              <span className={cn('galleryTitle')}>Photo name</span>
+              <h3 className={cn('galleryTitle')}>Photo name</h3>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage1} alt="" className={cn('images', 'image1', 'halfImage')} />
+            <span>
+              <img src={galleryImage1} alt="" className={cn('images', 'image1', 'halfImage')} />
+            </span>
           </div>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
-              <span className={cn('galleryTitle')}>Photo name</span>
+              <h3 className={cn('galleryTitle')}>Photo name</h3>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage2} alt="" className={cn('images', 'image2', 'halfImage')} />
+            <span>
+              <img src={galleryImage2} alt="" className={cn('images', 'image2', 'halfImage')} />
+            </span>
           </div>
         </div>
-        <div className={cn('lines')}>
+        <div className={cn('lines', 'fullBlock')}>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
-              <span className={cn('galleryTitle')}>Photo name</span>
+              <h3 className={cn('galleryTitle')}>Photo name</h3>
               Etiam dignissim diam quis enim lobortis.
             </div>
           </div>
@@ -44,17 +48,21 @@ const Gallery = () => {
         <div className={cn('lines')}>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
-              <span className={cn('galleryTitle')}>Photo name</span>
+              <h3 className={cn('galleryTitle')}>Photo name</h3>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage4} alt="" className={cn('images', 'image4', 'halfImage')} />
+            <span>
+              <img src={galleryImage4} alt="" className={cn('images', 'image4', 'halfImage')} />
+            </span>
           </div>
           <div className={cn('blocks')}>
             <div className={cn('galleryText')}>
-              <span className={cn('galleryTitle')}>Photo name</span>
+              <h3 className={cn('galleryTitle')}>Photo name</h3>
               Etiam dignissim diam quis enim lobortis.
             </div>
-            <img src={galleryImage5} alt="" className={cn('images', 'image5', 'halfImage')} />
+            <span>
+              <img src={galleryImage5} alt="" className={cn('images', 'image5', 'halfImage')} />
+            </span>
           </div>
         </div>
       </div>

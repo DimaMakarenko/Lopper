@@ -17,21 +17,45 @@ const Logos = ({ isWhite }) => {
       <span className={cn('logosItems')}>
         {isWhite ? (
           <>
-            <img src={codePenWhite} alt="" className={cn('logosImage')} />
-            <img src={dribleWhite} alt="" className={cn('logosImage')} />
-            <img src={dribleWhite} alt="" className={cn('logosImage')} />
-            <img src={codePenWhite} alt="" className={cn('logosImage')} />
-            <img src={codePenWhite} alt="" className={cn('logosImage')} />
-            <img src={dribleWhite} alt="" className={cn('logosImage')} />
+            <span>
+              <img src={codePenWhite} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={dribleWhite} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={dribleWhite} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={codePenWhite} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={codePenWhite} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={dribleWhite} alt="" className={cn('logosImage')} />
+            </span>
           </>
         ) : (
           <>
-            <img src={codePentColor} alt="" className={cn('logosImage')} />
-            <img src={dribleColor} alt="" className={cn('logosImage')} />
-            <img src={dribleColor} alt="" className={cn('logosImage')} />
-            <img src={codePentColor} alt="" className={cn('logosImage')} />
-            <img src={codePentColor} alt="" className={cn('logosImage')} />
-            <img src={dribleColor} alt="" className={cn('logosImage')} />
+            <span>
+              <img src={codePentColor} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={dribleColor} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={dribleColor} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={codePentColor} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={codePentColor} alt="" className={cn('logosImage')} />
+            </span>
+            <span>
+              <img src={dribleColor} alt="" className={cn('logosImage')} />
+            </span>
           </>
         )}
       </span>

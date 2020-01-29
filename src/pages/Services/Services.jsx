@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Header from 'components/Header/Header';
 import Testimonials from 'components/Testimonials/Testimonials';
 import Subscribe from 'components/Subscribe/Subscribe';
@@ -11,7 +11,7 @@ import { SERVICE_SERVICES } from 'components/Services/constants';
 // image
 import headerImage from 'image/services-header.png';
 import testimonialsAvatar from 'image/avatars/avatar2.png';
-import OurServices from './component/OurServices';
+import OurServices from './components/OurServices';
 
 const title = 'Our services';
 

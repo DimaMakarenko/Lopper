@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Intro from 'components/Intro/Intro';
 import Service from 'components/Services/Service';
 // image
@@ -21,10 +21,10 @@ const OurServices = ({ services }) => {
       <Service services={services} />
       <div className={cn('container', 'quote')}>
         <div className={cn('quoteContent')}>
-          <span className={cn('quoteText')}>
+          <p className={cn('quoteText')}>
             “Apparently we had reached a great height in the atmosphere, for the sky was a dead
             black, and the stars had ceased to twinkle.”
-          </span>
+          </p>
         </div>
         <div className={cn('quoteMan')}>
           <img src={homeMan} alt="" className={cn('quoteImage')} />

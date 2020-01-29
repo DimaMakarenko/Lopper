@@ -32,13 +32,27 @@ const Testimonials = ({ image }) => {
           <span className={cn('testimonialCompany')}>Some Company</span>
         </div>
         <div className={cn('faces')}>
-          <img src={face1} alt="" className={cn('faceItems', 'faceItem1')} />
-          <img src={face2} alt="" className={cn('faceItems', 'faceItem2')} />
-          <img src={face3} alt="" className={cn('faceItems', 'faceItem3')} />
-          <img src={face4} alt="" className={cn('faceItems', 'faceItem4')} />
-          <img src={face5} alt="" className={cn('faceItems', 'faceItem5')} />
-          <img src={face6} alt="" className={cn('faceItems', 'faceItem6')} />
-          <img src={face7} alt="" className={cn('faceItems', 'faceItem7')} />
+          <span>
+            <img src={face1} alt="" className={cn('faceItems', 'faceItem1')} />
+          </span>
+          <span>
+            <img src={face2} alt="" className={cn('faceItems', 'faceItem2')} />
+          </span>
+          <span>
+            <img src={face3} alt="" className={cn('faceItems', 'faceItem3')} />
+          </span>
+          <span>
+            <img src={face4} alt="" className={cn('faceItems', 'faceItem4')} />
+          </span>
+          <span>
+            <img src={face5} alt="" className={cn('faceItems', 'faceItem5')} />
+          </span>
+          <span>
+            <img src={face6} alt="" className={cn('faceItems', 'faceItem6')} />
+          </span>
+          <span>
+            <img src={face7} alt="" className={cn('faceItems', 'faceItem7')} />
+          </span>
         </div>
         <div className={cn('arrows')}>
           <span>
