@@ -19,6 +19,13 @@
   @media (max-width: $extraLarge){
     padding-left: 50px;
   }
+  @media (max-width: $extraLarge) {
+    padding-left: 20px;
+  }
+  @media (max-width: $small) {
+    padding: 30px 20px;
+  }
+
 }
 
 .logos {

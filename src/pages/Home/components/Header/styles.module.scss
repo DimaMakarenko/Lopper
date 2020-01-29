@@ -27,15 +27,22 @@
     font-size: 80px;
     line-height: 80px;
   }
+  @media (max-width: $small) {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 .headerSubtitle {
   font-weight: 800;
-  font-size: 14.4px;
+  font-size: 14px;
   line-height: 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
   display: block;
+  @media (max-width: $small) {
+    line-height: 24px;
+  }
 }
 
 .headerScroll {

@@ -39,6 +39,9 @@
   font-size: 16.2px;
   line-height: 26px;
   color: #776c82;
+  @media (max-width: $large) {
+    max-width: 600px;
+  }
 }
 
 .white {

@@ -12,84 +12,150 @@
   line-height: 30px;
   letter-spacing: 2px;
   padding-top: 60px;
+  position: relative;
+  box-sizing: border-box;
+  transition: .3s;
 
   a {
     color: $accentColor2;
     text-decoration: none;
   }
-  @media (max-width: $extraLarge){
+
+  @media (max-width: $extraLarge) {
     max-width: 1000px;
   }
-  @media (max-width: $large){
+  @media (max-width: $large) {
     max-width: 700px;
   }
+  @media (max-width: $small) {
+    max-width: 500px;
+  }
 }
+
 .navBarWhite {
   color: $white;
+
   a {
     color: $white;
   }
 }
+
 .logo {
   font-weight: 900;
   font-size: 24px;
   line-height: 43px;
 }
+
 .menu {
+  transition: .3s;
   @media (max-width: $large) {
     display: none;
   }
+
 }
+
+.openMenu {
+  background: $white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  a {
+    padding-left: 10px;
+
+    &:hover {
+      background-color: #ded7e6;
+    }
+  }
+
+  .menuItem {
+    margin-right: 0;
+  }
+}
+
 .menuItem {
   margin-right: 54px;
+
   &:last-child {
     margin-right: 0;
   }
 }
+
 .burger {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   cursor: pointer;
+  display: flex;
+  height: 21px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 3;
+  @media (min-width: $large) {
+    display: none;
+  }
 }
-.burgerIcon {
+
+.burgerItem {
   display: block;
   background-color: $accentColor2;
   position: relative;
   align-items: center;
   width: 27px;
   height: 2px;
-  &:after,
-  &:before {
-    content: '';
-    position: absolute;
-    background-color: $accentColor2;
-    height: 2px;
-  }
-  &:before {
-    width: 27px;
-    top: -7px;
-  }
-  &:after {
-    width: 18px;
-    right: 0;
-    top: 7px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    width: 20px;
   }
 }
+
+.openBurger {
+  .secondBurgerItem {
+    display: none;
+  }
+
+  .thirdBurgerItem {
+    width: 27px;
+    transform: rotate(45deg) translateY(-10px);
+  }
+
+  .firstBurgerItem {
+    transform: rotate(-45deg) translateY(10px);
+  }
+}
+
 .burgerIconWhite {
   background-color: $white;
-  &:before,
-  &:after {
-    background-color: $white;
-  }
+
 }
+
 .phone {
   display: flex;
+  font-size: 12px;
+  line-height: 20px;
   img {
     margin-right: 18px;
   }
 }
-.white{
+
+.white {
   color: $white;
-  a{
-    color:$white;
+
+  .openMenu {
+    background: $accentColor2;
+
+    a {
+      &:hover {
+        background-color: #453966;
+      }
+    }
+  }
+
+  a {
+    color: $white;
   }
 }

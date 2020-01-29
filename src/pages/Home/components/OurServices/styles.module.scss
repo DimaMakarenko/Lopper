@@ -9,41 +9,56 @@
 .quote {
   overflow: hidden;
   padding-top: 100px;
+  @media (max-width: $small) {
+    padding-top: 50px;
+  }
 }
 
 .quoteContent {
   padding: 100px;
   background-color: $royalPurple;
   color: $white;
-  font-size: 22.5px;
+  font-size: 22px;
   line-height: 40px;
   font-style: italic;
   @media (max-width: $extraLarge) {
     padding: 70px;
   }
-}
-.quoteText{
-  max-width: 750px;
-  display: block;
-  @media (max-width: $large){
-    width: 500px;
+  @media (max-width: $small) {
+    padding: 30px;
   }
 }
+
+.quoteText {
+  max-width: 750px;
+  display: block;
+  @media (max-width: $large) {
+    width: 500px;
+  }
+  @media (max-width: $small) {
+    width: 350px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
 .quoteMan {
   position: absolute;
   right: 0;
   bottom: 0;
 }
+
 .quoteImage {
   position: relative;
   margin-right: -30px;
   @media (max-width: $extraLarge) {
     width: 400px;
   }
-  @media (max-width: $large){
+  @media (max-width: $large) {
     width: 250px;
   }
 }
+
 .quotePerson {
   margin: 55px 0 55px 100px;
   font-size: 18px;

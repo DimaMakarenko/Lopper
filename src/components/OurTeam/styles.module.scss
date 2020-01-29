@@ -8,6 +8,8 @@
   position: relative;
   @media (max-width: $extraLarge){
     padding-bottom: 200px;
+  }@media (max-width: $small){
+    padding-bottom: 50px;
   }
 }
 
@@ -31,6 +33,9 @@
   @media (max-width: $large) {
     height: 400px;
   }
+  @media (max-width: $small) {
+    height: 300px;
+  }
   position: relative;
   &:nth-child(2n) {
     justify-content: flex-end;
@@ -47,6 +52,9 @@
   }
   @media (max-width: $large) {
     height: 300px;
+  }
+  @media (max-width: $small) {
+    height: 200px;
   }
 
 }
@@ -66,7 +74,11 @@
   }
   @media (max-width: $large) {
     height: 300px;
-    width: 300px;
+    max-width: 300px;
+  }
+  @media (max-width: $small) {
+    padding: 20px;
+    max-width: 250px;
   }
 }
 .names {
@@ -87,6 +99,10 @@
 .text {
   font-size: 18px;
   line-height: 29px;
+  @media (max-width: $small) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 .commentImage {
   height: 97px;

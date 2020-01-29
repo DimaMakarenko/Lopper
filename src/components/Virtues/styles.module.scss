@@ -4,6 +4,7 @@
 .virtuesMain {
   overflow: hidden;
 }
+
 .virtues {
   max-width: 1440px;
   margin: 0 auto;
@@ -21,6 +22,7 @@
 .virtuesContainer {
   background-color: $currant;
   position: relative;
+
   &:before {
     content: '';
     width: 9999px;
@@ -47,6 +49,7 @@
     left: -9998px;
     z-index: -1;
   }
+
   @media (max-width: $extraLarge) {
     grid-template-columns: 2fr 4fr;
   }
@@ -63,9 +66,16 @@
   @media (max-width: $extraLarge) {
     padding-left: 50px;
   }
+  @media (max-width: $small) {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 32px;
+  }
 
   &:last-child {
     padding-bottom: 120px;
+
   }
 
   &:before {
@@ -86,8 +96,16 @@
   line-height: 29px;
   color: $white;
   z-index: 2;
+
   &:last-child {
     padding-bottom: 120px;
+  }
+
+  @media (max-width: $small) {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -100,6 +118,9 @@
   display: block;
   padding-bottom: 70px;
   z-index: 2;
+  @media (max-width: $small) {
+    padding-bottom: 30px;
+  }
 }
 
 .virtuesBg {
