@@ -9,7 +9,7 @@ const Business = ({ titleColor }) => {
   return (
     <div className={cn('business')}>
       <span className={cn(titleColor, 'businessTitle')}>We build great business</span>
-      <span className={cn('businessText')}>
+      <div className={cn('businessText')}>
         <p className={cn('businessTextItem')}>
           Nisl condimentum id venenatis a. Nec tincidunt praesent semper feugiat nibh sed pulvinar
           proin gravida. Sollicitudin tempor id eu nisl nunc.
@@ -21,7 +21,7 @@ const Business = ({ titleColor }) => {
         <p className={cn('businessTextItem')}>
           Massa massa ultricies mi quis hendrerit dolor magna. Egestas dui id ornare arcu odio.
         </p>
-      </span>
+      </div>
     </div>
   );
 };

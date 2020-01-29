@@ -14,7 +14,7 @@
   padding-top: 60px;
   position: relative;
   box-sizing: border-box;
-  transition: .3s;
+  transition: 0.3s;
 
   a {
     color: $accentColor2;
@@ -30,6 +30,10 @@
   @media (max-width: $small) {
     max-width: 500px;
   }
+  @media (max-width: $small) {
+    max-width: 300px;
+    align-items: center;
+  }
 }
 
 .navBarWhite {
@@ -44,14 +48,17 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 43px;
+  @media (max-width: $extraSmall) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .menu {
-  transition: .3s;
+  transition: 0.3s;
   @media (max-width: $large) {
     display: none;
   }
-
 }
 
 .openMenu {
@@ -130,15 +137,18 @@
 
 .burgerIconWhite {
   background-color: $white;
-
 }
 
 .phone {
   display: flex;
   font-size: 12px;
   line-height: 20px;
-  img {
-    margin-right: 18px;
+}
+
+.phoneImage {
+  margin-right: 18px;
+  @media (max-width: $extraSmall) {
+    width: 10px;
   }
 }
 

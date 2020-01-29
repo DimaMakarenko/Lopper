@@ -16,7 +16,7 @@
 .business {
   padding: 100px 0;
   position: relative;
-  @media (max-width: $extraLarge){
+  @media (max-width: $extraLarge) {
     padding-left: 50px;
   }
   @media (max-width: $extraLarge) {
@@ -25,7 +25,6 @@
   @media (max-width: $small) {
     padding: 30px 20px;
   }
-
 }
 
 .logos {
@@ -42,5 +41,4 @@
     top: 0;
     right: -9998px;
   }
-
 }

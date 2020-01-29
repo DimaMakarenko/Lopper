@@ -7,7 +7,7 @@
   grid-gap: 55px 75px;
   padding-top: 50px;
   @media (max-width: $extraLarge) {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(374px, 1fr));
   }
 }
 

@@ -29,9 +29,8 @@
     max-width: 300px;
   }
 }
-.businessTextItem{
+.businessTextItem {
   padding-bottom: 40px;
-
 }
 .pink {
   color: $razzmatazz;
@@ -45,7 +44,6 @@
   @media (max-width: $extraLarge) {
     margin-left: 20px;
     justify-self: center;
-
   }
 }
 
@@ -80,7 +78,7 @@
 .white {
   color: $white;
 }
-.logosImage{
+.logosImage {
   @media (max-width: $large) {
     width: 100px;
   }

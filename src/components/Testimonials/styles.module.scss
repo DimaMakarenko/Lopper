@@ -25,7 +25,6 @@
   @media (max-width: $extraLarge) {
     max-width: 1000px;
   }
-
 }
 
 .mainAvatar {
@@ -37,6 +36,9 @@
   }
   @media (max-width: $small) {
     width: 200px;
+  }
+  @media (max-width: $extraSmall) {
+    width: 150px;
   }
 }
 
@@ -60,10 +62,17 @@
       font-size: 200px;
       bottom: -60px;
     }
+    @media (max-width: $extraLarge) {
+      font-size: 80px;
+      bottom: -20px;
+    }
   }
 
   @media (max-width: $large) {
     margin-top: -50px;
+  }
+  @media (max-width: $extraSmall) {
+    
   }
 }
 
@@ -90,6 +99,11 @@
     font-size: 24px;
     line-height: 20px;
     max-width: 350px;
+  }
+  @media (max-width: $small) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 200px;
   }
 }
 
@@ -136,6 +150,12 @@
   position: absolute;
   @media (max-width: $large) {
     max-width: 150px;
+  }
+  @media (max-width: $small) {
+    max-width: 100px;
+  }
+  @media (max-width: $extraSmall) {
+    max-width: 60px;
   }
 }
 

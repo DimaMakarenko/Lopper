@@ -13,9 +13,9 @@ const cn = classNames.bind(styles);
 const title = 'What we  do more than you can \n imagine, belive us.';
 const subTitle = 'What we do';
 
-const Clients = () => {
+const Clients = ({ myRef }) => {
   return (
-    <section>
+    <section ref={myRef}>
       <Intro subTitle={subTitle} title={title} />
       <div className={cn('container', 'clients')}>
         <div className={cn('business')}>

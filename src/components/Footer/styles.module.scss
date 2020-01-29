@@ -24,6 +24,12 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px 30px;
   }
+  @media (max-width: $extraSmall) {
+    display: flex;
+    max-width: 250px;
+    flex-direction: column;
+    margin-left: 50px;
+  }
 }
 
 .logo {
@@ -36,7 +42,9 @@
   @media (max-width: $small) {
     grid-column: 1 / 3;
   }
-
+  @media (max-width: $extraSmall) {
+    grid-column: 1 ;
+  }
 }
 
 .logoTitle {
@@ -134,4 +142,3 @@
   display: flex;
   justify-content: space-between;
 }
-

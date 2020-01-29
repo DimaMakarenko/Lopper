@@ -11,7 +11,7 @@ const Title = ({ title, colorText }) => {
   return (
     <div className={cn('container', 'titleContainer')}>
       <h1 className={cn('titleH')}>{title}</h1>
-      <p className={cn(colorText,  'titleText')}>We build great business</p>
+      <p className={cn(colorText, 'titleText')}>We build great business</p>
     </div>
   );
 };

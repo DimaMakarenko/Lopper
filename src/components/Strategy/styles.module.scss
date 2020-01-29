@@ -17,10 +17,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 120px 30px;
-  @media (max-width: $large){
+  @media (max-width: $large) {
     grid-gap: 50px 20px;
   }
-  @media (max-width: $small){
+  @media (max-width: $small) {
     grid-template-columns: 1fr;
   }
 }
@@ -75,7 +75,7 @@
   line-height: 40px;
   color: $currant;
   margin: 5px 0 18px;
-  @media (max-width: $small){
+  @media (max-width: $small) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -93,7 +93,7 @@
   font-size: 18px;
   line-height: 29px;
   color: #776c82;
-  @media (max-width: $small){
+  @media (max-width: $small) {
     font-size: 14px;
     line-height: 24px;
   }
@@ -121,15 +121,15 @@
     background-color: $royalPurple;
   }
 }
-.leftImage{
+.leftImage {
   margin-left: auto;
-  &:after{
+  &:after {
     right: 0;
   }
 }
-.rightImage{
+.rightImage {
   margin-right: auto;
-  &:after{
+  &:after {
     left: 0;
   }
 }

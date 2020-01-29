@@ -8,18 +8,20 @@
   grid-column-gap: 30px;
   transform: translateY(76px);
   @media (max-width: $extraLarge) {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000px;
     margin: 0 auto;
   }
-  @media (max-width:$large) {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  @media (max-width: $large) {
     transform: translateY(50px);
   }
   @media (max-width: $small) {
     max-width: 500px;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     transform: translateY(40px);
+  }
+  @media (max-width:$extraSmall ) {
+    max-width: 320px;
+    transform: translateY(50px);
   }
 }
 
@@ -31,13 +33,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (max-width:$large) {
+  @media (max-width: $large) {
     font-size: 80px;
     line-height: 60px;
   }
   @media (max-width: $small) {
     font-size: 60px;
     line-height: 60px;
+  }
+  @media (max-width: $extraSmall) {
+    font-size: 45px;
+    line-height:40px;
   }
 }
 

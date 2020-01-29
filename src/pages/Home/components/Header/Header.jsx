@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const Header = () => {
+const Header = ({ scrollTo }) => {
   return (
     <>
       <div className={cn('container', 'header')}>
@@ -21,7 +21,7 @@ const Header = () => {
             We grow
             <span className={cn('pink')}>great business</span>
           </p>
-          <div className={cn('headerScroll')}>
+          <div className={cn('headerScroll')} onClick={scrollTo}>
             Scroll to see more
             <img src={scrollIcon} alt="" className={cn('scrollImage')} />
           </div>

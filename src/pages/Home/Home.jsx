@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 // components
 import Footer from 'components/Footer/Footer';
 import Subscribe from 'components/Subscribe/Subscribe';
@@ -18,16 +18,24 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
+const scrollToRef = ref =>
+  window.scrollTo({ left: 0, top: ref.current.offsetTop, behavior: 'smooth' });
+
 const Home = () => {
+  const myRef = useRef(null);
+  const executeScroll = () => {
+    scrollToRef(myRef);
+  };
+
   return (
     <>
       <header className={cn('home')}>
-        <Header />
+        <Header scrollTo={executeScroll} />
       </header>
       <main>
         <OurServices services={HOME_SERVICES} />
         <Features />
-        <Clients />
+        <Clients myRef={myRef} />
         <Evaluation bgColor="currant" />
         <Testimonials image={testimonialsAvatar} />
         <Subscribe />

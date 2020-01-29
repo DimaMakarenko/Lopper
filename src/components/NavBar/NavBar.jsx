@@ -42,7 +42,11 @@ const NavBar = ({ colorText }) => {
       </nav>
       <div className={cn('phone')}>
         <span>
-          <img src={colorText === 'white' ? phoneIcoWhite : phoneIcoBlack} alt="phone" />
+          <img
+            src={colorText === 'white' ? phoneIcoWhite : phoneIcoBlack}
+            alt="phone"
+            className={cn('phoneImage')}
+          />
         </span>
         <div>
           <a href="tel:01-666-693-456">(01) 666 - 693 - 456</a>
