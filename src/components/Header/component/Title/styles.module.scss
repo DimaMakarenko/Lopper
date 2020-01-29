@@ -26,6 +26,10 @@
   @media (max-width: $extraLarge) {
     max-width: 1000px;
   }
+  @media (max-width: $small) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .titleText {

@@ -17,7 +17,6 @@
 
 .sides {
   position: relative;
-
 }
 
 .featuresText {
@@ -25,15 +24,24 @@
   padding: 20px 0;
   max-width: 460px;
 
+  line-height: 29px;
+  font-size: 18px;
   @media (max-width: $extraLarge) {
     margin-left: 50px;
+  }
+  @media (max-width: $small) {
+    margin-left: 25px;
+    line-height: 20px;
+    font-size: 14px;
+
   }
 }
 
 .featuresTextItem {
   margin-bottom: 40px;
-  line-height: 29px;
-  font-size: 18px;
+  @media (max-width: $small) {
+    margin-bottom: 10px;
+  }
 }
 
 .featuresBtn {

@@ -20,6 +20,9 @@
   @media (max-width: $large){
     grid-gap: 50px 20px;
   }
+  @media (max-width: $small){
+    grid-template-columns: 1fr;
+  }
 }
 
 .itemTextContainer {
@@ -47,10 +50,12 @@
     @media (max-width: $extraLarge) {
       bottom: -15%;
     }
-
   }
   @media (max-width: $large) {
     margin-top: auto;
+  }
+  @media (max-width: $small) {
+    display: none;
   }
 }
 
@@ -70,6 +75,10 @@
   line-height: 40px;
   color: $currant;
   margin: 5px 0 18px;
+  @media (max-width: $small){
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .itemSubTitle {
@@ -84,6 +93,10 @@
   font-size: 18px;
   line-height: 29px;
   color: #776c82;
+  @media (max-width: $small){
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .textContainer {

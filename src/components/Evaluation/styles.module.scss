@@ -37,7 +37,8 @@
     max-width: 450px;
     grid-row-gap: 30px;
     height: auto;
-     }
+  }
+
 }
 
 .item {
@@ -51,6 +52,9 @@
   @media (max-width: $large) {
     padding: 30px;
   }
+  @media (max-width: $small) {
+    padding: 10px 30px;
+  }
 }
 
 .active {
@@ -62,13 +66,22 @@
   font-size: 27px;
   line-height: 40px;
   margin: 13px 0;
+  @media (max-width: $small) {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .itemText {
-  font-size: 16.2px;
+  font-size: 16px;
   line-height: 26px;
+  @media (max-width: $small) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
-.itemImage{
+
+.itemImage {
   width: 54px;
   @media (max-width: $large) {
     width: 40px;

@@ -29,11 +29,17 @@
   @media (max-width: $large) {
     height: 390px;
   }
+  @media (max-width: $small) {
+    height: 290px;
+  }
 }
 
 .blocks {
   padding: 75px 0 0 115px;
   width: 50%;
+  @media (max-width: $small) {
+    padding: 20px 0 0 30px;
+  }
 }
 
 .images {
@@ -44,9 +50,13 @@
   z-index: 3;
   color: $white;
   position: relative;
-  font-size: 16.2px;
+  font-size: 16px;
   line-height: 26px;
   max-width: 220px;
+  @media (max-width: $small) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .galleryTitle {
