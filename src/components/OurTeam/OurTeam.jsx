@@ -29,12 +29,14 @@ const OurTeam = () => {
           <div className={cn('comment')}>
             <span className={cn('names')}>Klara Ipsum</span>
             <span className={cn('profession')}> Designer</span>
-            <span className={cn('text')}>
+            <p className={cn('text')}>
               By the same illusion which lifts the horizon of the sea to the level of the spectator
               on a hillside.
-            </span>
+            </p>
             <span className={cn('email')}>klara@lopper.com</span>
-            <img src={avatarMini} alt="" className={cn('commentImage')} />
+            <span>
+              <img src={avatarMini} alt="" className={cn('commentImage')} />
+            </span>
           </div>
         </div>
         <div className={cn('item')}>

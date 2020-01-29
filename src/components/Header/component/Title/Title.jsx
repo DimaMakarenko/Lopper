@@ -7,18 +7,18 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const Title = ({ title, isWhite }) => {
+const Title = ({ title, colorText }) => {
   return (
     <div className={cn('container', 'titleContainer')}>
       <h1 className={cn('titleH')}>{title}</h1>
-      <span className={cn(isWhite && 'titleTextWhite', 'titleText')}>We build great business</span>
+      <p className={cn(colorText,  'titleText')}>We build great business</p>
     </div>
   );
 };
 
 Title.propTypes = {
   title: PropTypes.string.isRequired,
-  isWhite: PropTypes.bool.isRequired
+  colorText: PropTypes.oneOf(['black'])
 };
 
 export default Title;

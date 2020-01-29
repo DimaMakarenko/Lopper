@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Intro from 'components/Intro/Intro';
 // image
 import virtuesBgImage from 'image/virtues-bg.png';
@@ -19,37 +19,37 @@ const Virtues = () => {
       <div className={cn('virtues')}>
         <div className={cn('container', 'virtuesContainer')}>
           <div className={cn('virtuesTitle')}>
-            <Intro title={title} subTitle={subTitle} isWhite />
+            <Intro title={title} subTitle={subTitle} colorText="white" />
           </div>
           <div className={cn('virtuesContent')}>
             <div className={cn('contentLeft')}>
-              <span className={cn('contentLeftText')}>We build great business</span>
+              <p className={cn('contentLeftText')}>We build great business</p>
             </div>
             <div className={cn('contentRight')}>
-              <span className={cn('contentRightText')}>
+              <p className={cn('contentRightText')}>
                 Id consectetur purus ut faucibus pulvinar elementum integer enim. A arcu cursus
                 vitae congue mauris rhoncus aenean.
-              </span>
+              </p>
             </div>
             <div className={cn('contentLeft')}>
-              <span className={cn('contentLeftText')}>We build great business</span>
+              <p className={cn('contentLeftText')}>We build great business</p>
             </div>
             <div className={cn('contentRight')}>
-              <span className={cn('contentRightText')}>
+              <p className={cn('contentRightText')}>
                 Enim neque volutpat ac tincidunt vitae. Malesuada nunc vel risus commodo viverra
                 maecenas accumsan lacus vel. Odio morbi quis commodo odio aenean sed adipiscing diam
                 donec. Nisi vitae suscipit tellus mauris a.
-              </span>
+              </p>
             </div>
             <div className={cn('contentLeft')}>
-              <span className={cn('contentLeftText')}>We build great business</span>
+              <p className={cn('contentLeftText')}>We build great business</p>
             </div>
             <div className={cn('contentRight')}>
               <span className={cn('contentRightText')}>
-                <span className={cn('contentRightText')}>
+                <p className={cn('contentRightText')}>
                   Id consectetur purus ut faucibus pulvinar elementum integer enim. A arcu cursus
                   vitae congue mauris rhoncus aenean.
-                </span>
+                </p>
               </span>
             </div>
           </div>

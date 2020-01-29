@@ -1,17 +1,17 @@
 import React from 'react';
 // proptypes
 import PropTypes from 'prop-types';
-// component
+// components
 import NavBar from 'components/NavBar/NavBar';
 import Title from './component/Title/Title';
 import Image from './component/Image/Image';
 
-const Header = ({ title, image, isWhite = true }) => {
+const Header = ({ title, image, colorText }) => {
   return (
     <header>
-      <NavBar isWhite={false} />
+      <NavBar colorText="black" />
       <Image image={image}>
-        <Title title={title} isWhite={isWhite} />
+        <Title title={title} colorText={colorText} />
       </Image>
     </header>
   );

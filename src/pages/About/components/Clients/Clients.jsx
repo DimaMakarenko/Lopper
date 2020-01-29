@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Business from 'components/Clients/Business';
 import Logos from 'components/Clients/Logos';
 import Intro from 'components/Intro/Intro';
@@ -15,13 +15,15 @@ const subTitle = 'What we do';
 
 const Clients = () => {
   return (
-    <section>
-      <Intro subTitle={subTitle} title={title} />
+    <section className={cn('clientsContainer')}>
+      <Intro subTitle={subTitle} title={title} colorText="white" />
       <div className={cn('container', 'clients')}>
         <div className={cn('business')}>
-          <Business titleColor="pink" />
+          <Business titleColor="white" />
         </div>
-        <Logos isWhite={false} />
+        <div className={cn('logos')}>
+          <Logos isWhite />
+        </div>
       </div>
     </section>
   );

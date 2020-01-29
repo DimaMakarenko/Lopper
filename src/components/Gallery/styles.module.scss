@@ -32,7 +32,6 @@
 }
 
 .blocks {
-  display: block;
   padding: 75px 0 0 115px;
   width: 50%;
 }
@@ -91,5 +90,7 @@
   @media(max-width: 1440px){
     width: 50%;
   }
-
+}
+.fullBlock{
+  //display: block;
 }

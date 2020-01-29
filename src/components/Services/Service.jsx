@@ -14,9 +14,11 @@ const Service = ({ services }) => {
     <div className={cn('container', 'serviceItems')}>
       {services.map(({ image, title, text, style }, index) => (
         <div className={cn('serviceItem')} key={index}>
-          <img src={image} alt="" className={cn('serviceImg')} />
+          <span>
+            <img src={image} alt="" className={cn('serviceImg')} />
+          </span>
           <span className={cn('serviceTitle', style)}>{title}</span>
-          <span className={cn('serviceText', style && 'white')}>{text}</span>
+          <p className={cn('serviceText', style && 'white')}>{text}</p>
         </div>
       ))}
     </div>

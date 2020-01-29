@@ -29,7 +29,8 @@
 }
 
 .titleText {
-  color: $accentColor2;
+  color: $white;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 37px;
@@ -37,6 +38,6 @@
   text-transform: uppercase;
 }
 
-.titleTextWhite {
-  color: $white;
+.black{
+  color: $accentColor2;
 }

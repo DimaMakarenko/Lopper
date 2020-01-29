@@ -8,15 +8,24 @@ import styles from './styles.module.scss';
 const cn = classNames.bind(styles);
 
 const Subscribe = () => {
+  const myRef = React.createRef();
+
+  const handleFocus = () => {
+    if (!myRef.current.value) {
+      myRef.current.focus();
+    }
+  };
   return (
     <section className={cn('container block', 'subscribe')}>
       <h2 className={cn('title')}>Subscribe to our newsletter</h2>
-      <span className={cn('subTitle')}>Cras pulvinar mattis nunc sed blandit.</span>
+      <p className={cn('subTitle')}>Cras pulvinar mattis nunc sed blandit.</p>
       <form className={cn('form')}>
-        <input type="text" placeholder="Enter email" className={cn('formInput')} />
-        <span className={cn('formBtn')}>
+        <input type="text" placeholder="Enter email" className={cn('formInput')} ref={myRef} />
+        <span className={cn('formBtn')} onClick={handleFocus}>
           Subscribe
-          <img src={arrowRightIcon} alt="" className={cn('formImage')} />
+          <span className={cn('formImageContainer')}>
+            <img src={arrowRightIcon} alt="" className={cn('formImage')} />
+          </span>
         </span>
       </form>
     </section>

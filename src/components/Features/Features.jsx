@@ -1,5 +1,5 @@
 import React from 'react';
-// component
+// components
 import Intro from 'components/Intro/Intro';
 // image
 import featureImage1 from 'image/features/features1.png';
@@ -23,13 +23,17 @@ const Features = () => {
         <div className={cn('sides')}>
           <Intro title={title} subTitle={subTitle} text={text} smallText />
           <div className={cn('featuresText')}>
-            <span>Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.</span>
-            <span>Lectus vestibulum mattis ullamcorper velit sed ullamcorper.</span>
-            <span>
+            <p className={cn('featuresTextItem')}>
+              Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.
+            </p>
+            <p className={cn('featuresTextItem')}>
+              Lectus vestibulum mattis ullamcorper velit sed ullamcorper.
+            </p>
+            <p className={cn('featuresTextItem')}>
               Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Dui faucibus in
               ornare quam viverr
-            </span>
-            <span>Posuere ac ut consequat semper viverra.</span>
+            </p>
+            <p className={cn('featuresTextItem')}>Posuere ac ut consequat semper viverra.</p>
           </div>
           <button className={cn('featuresBtn')} type="button">
             Learn more
