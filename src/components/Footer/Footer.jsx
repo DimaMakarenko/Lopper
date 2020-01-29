@@ -69,13 +69,17 @@ const Footer = () => {
               <div className={cn('contactIcon')}>
                 <img src={mailIcon} alt="" />
               </div>
-              <span>contact@lop.com</span>
+              <span>
+                <a href="mailto:contact@lop.com">contact@lop.com</a>
+              </span>
             </li>
             <li className={cn('contactItem')}>
               <div className={cn('contactIcon')}>
                 <img src={phoneIcon} alt="" />
               </div>
-              <span>856 - 693 - 456</span>
+              <span>
+                <a href="tel:01-666-693-456">01 - 856 - 693 - 456</a>
+              </span>
             </li>
           </ul>
         </div>

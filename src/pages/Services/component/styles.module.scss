@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center 150px;
+
+  // overload
   @media (max-width: $large){
     padding-top: 150px;
   }

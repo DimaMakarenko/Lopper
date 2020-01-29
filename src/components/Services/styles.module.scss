@@ -17,6 +17,9 @@
   @media (max-width: $extraLarge) {
     padding: 0 50px;
   }
+  @media (max-width: $large) {
+    align-items: center;
+  }
 }
 
 .serviceImg {
