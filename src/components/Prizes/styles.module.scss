@@ -19,7 +19,7 @@
     max-width: 500px;
     transform: translateY(40px);
   }
-  @media (max-width:$extraSmall ) {
+  @media (max-width: $extraSmall) {
     max-width: 320px;
     transform: translateY(50px);
   }
@@ -43,7 +43,7 @@
   }
   @media (max-width: $extraSmall) {
     font-size: 45px;
-    line-height:40px;
+    line-height: 40px;
   }
 }
 
@@ -57,6 +57,7 @@
   @media (max-width: $small) {
     font-size: 10px;
     line-height: 18px;
+    text-align: center;
   }
 }
 

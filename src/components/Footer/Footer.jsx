@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className={cn('block', 'footer')}>
       <div className={cn('container', 'footerContainer')}>
         <div className={cn('logo')}>
-          <h2 className={cn('logo Title')}>Lopper</h2>
+          <h2 className={cn('logoTitle')}>Lopper</h2>
           <p className={cn('logoSubTitle')}>Eu augue ut lectus arcu bibendum at.</p>
         </div>
         <div className={cn('menu')}>

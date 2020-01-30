@@ -39,7 +39,7 @@ const Features = () => {
             Learn more
           </button>
         </div>
-        <div className={cn('sides')}>
+        <div className={cn('sides', 'sidesImages')}>
           <img src={featureImage1} alt="" className={cn('image1')} />
           <img src={featureImage2} alt="" className={cn('image2')} />
         </div>

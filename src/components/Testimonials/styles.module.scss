@@ -72,7 +72,6 @@
     margin-top: -50px;
   }
   @media (max-width: $extraSmall) {
-    
   }
 }
 
@@ -80,6 +79,10 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 29px;
+  @media (max-width: $extraSmall) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .testimonialText {

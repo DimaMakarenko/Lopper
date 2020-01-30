@@ -1,48 +1,53 @@
 *,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 400;
-    transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    user-select: none;
+  user-select: none;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .block {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 @media screen and (max-width: 1200px) {
-    .block {
-        padding-top: 75px;
-    }
+  .block {
+    padding-top: 75px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .block {
+    padding-top: 40px;
+  }
 }
 
 .pinkText {
-    color: #f61067;
+  color: #f61067;
 }
 
 .greenText {
-    color: #00f0b5;
+  color: #00f0b5;
 }
 
 .purpleText {
-    color: #5e239d;
+  color: #5e239d;
 }

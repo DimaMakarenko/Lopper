@@ -17,4 +17,7 @@
   @media (max-width: $small) {
     height: 200px;
   }
+  @media (max-width: $extraSmall) {
+    height: 100px;
+  }
 }

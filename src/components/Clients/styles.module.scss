@@ -73,6 +73,10 @@
   @media (max-width: $large) {
     grid-gap: 80px 20px;
   }
+  @media (max-width: $extraSmall) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 45px;
+  }
 }
 
 .white {

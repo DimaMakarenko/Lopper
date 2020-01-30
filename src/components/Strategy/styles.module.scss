@@ -11,6 +11,9 @@
   @media (max-width: $large) {
     margin-bottom: 200px;
   }
+  @media (max-width: $extraSmall) {
+    margin-bottom: 100px;
+  }
 }
 
 .items {

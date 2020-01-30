@@ -32,6 +32,9 @@
   @media (max-width: $small) {
     height: 290px;
   }
+  @media (max-width: $extraSmall) {
+    height: 190px;
+  }
 }
 
 .blocks {
@@ -39,6 +42,9 @@
   width: 50%;
   @media (max-width: $small) {
     padding: 20px 0 0 30px;
+  }
+  @media (max-width: $extraSmall) {
+    padding: 20px;
   }
 }
 
@@ -67,6 +73,11 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 5px;
+  @media (max-width: $extraSmall) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
 }
 
 .image1 {

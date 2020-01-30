@@ -14,4 +14,7 @@
   @media (max-width: $large) {
     padding-top: 150px;
   }
+  @media (max-width: $extraSmall) {
+    padding-bottom: 50px;
+  }
 }

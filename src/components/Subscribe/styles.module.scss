@@ -6,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 140px;
+  @media (max-width: $extraSmall) {
+    margin-bottom: 50px;
+  }
 }
 
 .title {
@@ -23,7 +26,6 @@
     font-size: 24px;
     line-height: 30px;
   }
-
 }
 
 .subTitle {
@@ -46,7 +48,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
 }
 
 .formImage {

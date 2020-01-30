@@ -13,12 +13,21 @@
   @media (max-width: $large) {
     grid-template-columns: 4fr 2fr;
   }
+  @media (max-width: $extraSmall) {
+    display: block;
+    padding-bottom: 50px;
+  }
 }
 
 .sides {
   position: relative;
 }
 
+.sidesImages {
+  @media (max-width: $extraSmall) {
+    display: none;
+  }
+}
 .featuresText {
   color: $blackCurrant;
   padding: 20px 0;
@@ -30,7 +39,7 @@
     margin-left: 50px;
   }
   @media (max-width: $small) {
-    margin-left: 25px;
+    margin-left: 20px;
     line-height: 20px;
     font-size: 14px;
   }
@@ -62,6 +71,15 @@
   cursor: pointer;
   @media (max-width: $extraLarge) {
     margin-left: 50px;
+  }
+  @media (max-width: $extraSmall) {
+    margin-left: 20px;
+    font-size: 10px;
+    line-height: 18px;
+    width: 100px;
+    height: 25px;
+    border-radius: 12px;
+    letter-spacing: 0;
   }
 }
 

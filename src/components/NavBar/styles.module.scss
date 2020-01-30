@@ -34,6 +34,9 @@
     max-width: 300px;
     align-items: center;
   }
+  @media (max-width: $extraSmall) {
+    padding: 20px 0;
+  }
 }
 
 .navBarWhite {
@@ -143,6 +146,9 @@
   display: flex;
   font-size: 12px;
   line-height: 20px;
+  @media (max-width: $extraSmall) {
+    display: none;
+  }
 }
 
 .phoneImage {
