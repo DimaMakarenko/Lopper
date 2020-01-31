@@ -29,19 +29,19 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/">About</a>
+              <a href="/about">About</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/">Services</a>
+              <a href="/services">Services</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/">News</a>
+              <a href="/work">News</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/">Gallery</a>
+              <a href="/work">Gallery</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/">Contact</a>
+              <a href="/team">Contact</a>
             </li>
           </ul>
         </div>
@@ -87,27 +87,27 @@ const Footer = () => {
           <span className={cn('blockTitle')}>follow</span>
           <ul className={cn('socialMedia')}>
             <li>
-              <a href="/">
+              <a href="https://twitter.com/dan_abramov">
                 <img src={twitterIcon} alt="" />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://www.facebook.com/public/Dan-Abramov">
                 <img src={facebookIcon} alt="" />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://www.instagram.com/?hl=uk">
                 <img src={instagramIcon} alt="" />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw">
                 <img src={youtubeIcon} alt="" />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://medium.com/">
                 <img src={mediumIcon} alt="" />
               </a>
             </li>
