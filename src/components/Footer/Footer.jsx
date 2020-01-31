@@ -29,19 +29,19 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/about">About</a>
+              <a href="/Lopper/about">About</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/services">Services</a>
+              <a href="/Lopper/services">Services</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/work">News</a>
+              <a href="/Lopper/work">News</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/work">Gallery</a>
+              <a href="/Lopper/work">Gallery</a>
             </li>
             <li className={cn('blockItem')}>
-              <a href="/team">Contact</a>
+              <a href="/Lopper/team">Contact</a>
             </li>
           </ul>
         </div>
