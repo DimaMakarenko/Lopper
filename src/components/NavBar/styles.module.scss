@@ -31,10 +31,11 @@
     max-width: 500px;
   }
   @media (max-width: $small) {
-    max-width: 300px;
+    max-width: 375px;
     align-items: center;
   }
   @media (max-width: $extraSmall) {
+    max-width: 300px;
     padding: 20px 0;
   }
 }
@@ -146,6 +147,7 @@
   display: flex;
   font-size: 12px;
   line-height: 20px;
+  align-items: center;
   @media (max-width: $extraSmall) {
     display: none;
   }

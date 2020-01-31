@@ -1,0 +1,56 @@
+@import "style/colors";
+@import "style/media";
+
+.faces {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.faceItem1 {
+  top: 3%;
+  left: 7%;
+}
+
+.faceItem2 {
+  top: 45%;
+  left: 0;
+}
+
+.faceItem3 {
+  top: 30%;
+  left: 20%;
+}
+
+.faceItem4 {
+  top: 34%;
+  right: 20%;
+}
+
+.faceItem5 {
+  top: 18%;
+  right: 10%;
+}
+
+.faceItem6 {
+  top: -5%;
+  right: 0;
+}
+
+.faceItem7 {
+  top: 30%;
+  right: 0;
+}
+
+.faceItems {
+  position: absolute;
+  @media (max-width: $large) {
+    max-width: 150px;
+  }
+  @media (max-width: $small) {
+    max-width: 100px;
+  }
+  @media (max-width: $extraSmall) {
+    max-width: 60px;
+  }
+}

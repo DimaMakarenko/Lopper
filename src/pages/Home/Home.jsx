@@ -28,8 +28,8 @@ const Home = () => {
   };
 
   return (
-    <>
-      <header className={cn('home')}>
+    <div className={cn('home')}>
+      <header className={cn('homeHeader')}>
         <Header scrollTo={executeScroll} />
       </header>
       <main>
@@ -41,7 +41,7 @@ const Home = () => {
         <Subscribe />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

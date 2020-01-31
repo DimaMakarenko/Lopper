@@ -1,0 +1,36 @@
+@import "style/colors";
+@import "style/media";
+
+
+.arrows {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  @media (max-width: $large) {
+    max-width: 650px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  @media (max-width: $small) {
+    bottom: 10%;
+  }
+}
+
+.arrowRight,
+.arrowLeft {
+  cursor: pointer;
+}
+
+.prevSlide {
+  position: absolute;
+  left: -800px;
+}
+
+.nextSlide {
+  position: absolute;
+  right: -800px;
+}
+
