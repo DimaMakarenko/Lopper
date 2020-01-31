@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6dc4e33bdf4cfb21d6b42a97f70e9234",
+    "revision": "6e5bc30b355365addb8282019a3ca3f4",
     "url": "/Lopper/index.html"
   },
   {
-    "revision": "1e334e71bf9487ca4abe",
-    "url": "/Lopper/static/css/main.fe41d177.chunk.css"
+    "revision": "d242ca5c07fd61b9078a",
+    "url": "/Lopper/static/css/main.260c19b2.chunk.css"
   },
   {
-    "revision": "51cb713d8199cbd2d945",
-    "url": "/Lopper/static/js/2.3cdd4b26.chunk.js"
+    "revision": "b18c3950f721d083bb54",
+    "url": "/Lopper/static/js/2.93889643.chunk.js"
   },
   {
-    "revision": "738c8d32191c93cca78350c0114a36fa",
-    "url": "/Lopper/static/js/2.3cdd4b26.chunk.js.LICENSE"
+    "revision": "4431a7ccbc5793ab51c5ef0d1858a5a0",
+    "url": "/Lopper/static/js/2.93889643.chunk.js.LICENSE"
   },
   {
-    "revision": "1e334e71bf9487ca4abe",
-    "url": "/Lopper/static/js/main.abe9db32.chunk.js"
+    "revision": "d242ca5c07fd61b9078a",
+    "url": "/Lopper/static/js/main.47ed432d.chunk.js"
   },
   {
     "revision": "c0370b0bbb1b4448bf28",
