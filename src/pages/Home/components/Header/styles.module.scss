@@ -1,12 +1,19 @@
 @import 'style/colors';
 @import 'style/media';
+.headerBg {
+  height: 100vh;
+  background-image: url(../../../../image/home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
 .header {
   color: $white;
   height: 100%;
   position: relative;
 }
-
 .headerContent {
   position: absolute;
   top: 50%;

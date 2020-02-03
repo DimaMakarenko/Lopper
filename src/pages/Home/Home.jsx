@@ -29,9 +29,7 @@ const Home = () => {
 
   return (
     <div className={cn('home')}>
-      <header className={cn('homeHeader')}>
-        <Header scrollTo={executeScroll} />
-      </header>
+      <Header scrollTo={executeScroll} />
       <main>
         <OurServices services={HOME_SERVICES} />
         <Features />

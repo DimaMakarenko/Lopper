@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 // proptypes
 import PropTypes from 'prop-types';
 // routing
@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom';
 // image
 import phoneIcoBlack from 'image/phone-black.svg';
 import phoneIcoWhite from 'image/phone.svg';
-// styles
+// animation
 import classNames from 'classnames/bind';
+import animateNavBar from './animate';
+// styles
 import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
@@ -15,6 +17,13 @@ const cn = classNames.bind(styles);
 const NavBar = ({ colorText }) => {
   const menuRef = React.createRef();
   const burgerRef = React.createRef();
+  const logoRef = React.createRef();
+  const phoneRef = React.createRef();
+  const menuItemsRef = useRef([]);
+
+  useEffect(() => {
+    animateNavBar(logoRef, menuRef, phoneRef, menuItemsRef);
+  }, []);
 
   const openMenu = () => {
     menuRef.current.classList.toggle(styles.openMenu);
@@ -22,25 +31,57 @@ const NavBar = ({ colorText }) => {
   };
   return (
     <div className={cn('container', 'navBar', colorText)}>
-      <h2 className={cn('logo')}>Lopper</h2>
+      <h2 className={cn('logo')} ref={logoRef}>
+        Lopper
+      </h2>
       <nav className={cn('menu')} ref={menuRef}>
-        <Link to="/home" className={cn('menuItem')}>
+        <Link
+          to="/home"
+          className={cn('menuItem')}
+          ref={e => {
+            menuItemsRef.current[0] = e;
+          }}
+        >
           Home
         </Link>
-        <Link to="/services" className={cn('menuItem')}>
+        <Link
+          to="/services"
+          className={cn('menuItem')}
+          ref={e => {
+            menuItemsRef.current[1] = e;
+          }}
+        >
           Services
         </Link>
-        <Link to="/work" className={cn('menuItem')}>
+        <Link
+          to="/work"
+          className={cn('menuItem')}
+          ref={e => {
+            menuItemsRef.current[2] = e;
+          }}
+        >
           Work
         </Link>
-        <Link to="/about" className={cn('menuItem')}>
+        <Link
+          to="/about"
+          className={cn('menuItem')}
+          ref={e => {
+            menuItemsRef.current[3] = e;
+          }}
+        >
           About
         </Link>
-        <Link to="/team" className={cn('menuItem')}>
+        <Link
+          to="/team"
+          className={cn('menuItem')}
+          ref={e => {
+            menuItemsRef.current[4] = e;
+          }}
+        >
           Team
         </Link>
       </nav>
-      <div className={cn('phone')}>
+      <div className={cn('phone')} ref={phoneRef}>
         <span>
           <img
             src={colorText === 'white' ? phoneIcoWhite : phoneIcoBlack}

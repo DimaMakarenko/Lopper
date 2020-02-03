@@ -12,7 +12,7 @@ const cn = classNames.bind(styles);
 
 const Header = ({ scrollTo }) => {
   return (
-    <>
+    <header className={cn('headerBg')}>
       <div className={cn('container', 'header')}>
         <NavBar colorText="white" />
         <div className={cn('headerContent')}>
@@ -39,7 +39,7 @@ const Header = ({ scrollTo }) => {
           </div>
         </div>
       </div>
-    </>
+    </header>
   );
 };
 
