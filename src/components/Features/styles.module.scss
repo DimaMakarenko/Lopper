@@ -21,13 +21,14 @@
 
 .sides {
   position: relative;
-}
 
-.sidesImages {
-  @media (max-width: $extraSmall) {
-    display: none;
+  & .sidesImages {
+    @media (max-width: $extraSmall) {
+      display: none;
+    }
   }
 }
+
 .featuresText {
   color: $blackCurrant;
   padding: 20px 0;
@@ -69,6 +70,11 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.3s ease-in;
+  &:hover{
+    background-color: #cd70b7;
+  }
+
   @media (max-width: $extraLarge) {
     margin-left: 50px;
   }

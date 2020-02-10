@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // image
 import arrowLeftIcon from 'image/arrow-left.png';
 import arrowRightIcon from 'image/arrow-right.png';
@@ -6,6 +6,8 @@ import arrowRightIcon from 'image/arrow-right.png';
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 import { USERS } from '../Testimonials/USERS';
+
+// width
 
 const cn = classNames.bind(styles);
 
@@ -24,20 +26,10 @@ const Slider = ({ data = [], component: Component }) => {
       : setCurrentSlide(currentSlide - 1);
   };
 
-  const getNumNextSlide = () => {
-    return currentSlide === data.length - 1 ? 0 : currentSlide + 1;
-  };
-  const getNumPrevSlide = () => {
-    return currentSlide === 0 ? data.length - 1 : currentSlide - 1;
-  };
   return (
     <>
       <div className={cn('slider')}>
-        <div className={cn('sliderWrapper')}>
-          <Component {...USERS[getNumPrevSlide()]} className={cn('slide')} />
-          <Component {...USERS[currentSlide]} className={cn('slide')} />
-          <Component {...USERS[getNumNextSlide()]} className={cn('slide')} />
-        </div>
+        <Component {...USERS[currentSlide]} className={cn('slide')} />
       </div>
 
       <div className={cn('arrows')}>

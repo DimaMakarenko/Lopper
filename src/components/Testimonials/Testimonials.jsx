@@ -11,9 +11,9 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const Testimonials = () => {
+const Testimonials = ({ color }) => {
   return (
-    <section className={cn('testimonial')}>
+    <section className={cn('testimonial', color)}>
       <div className={cn('container', 'testimonialContainers')}>
         <Slider data={USERS} component={Slide} />
         <Faces />

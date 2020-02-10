@@ -3,7 +3,6 @@
 
 
 .avatar {
-  margin-top: -127px;
   z-index: 2;
   margin-bottom: 116px;
   position: relative;
@@ -86,7 +85,11 @@
     height: 2px;
     width: 6px;
     background-color: $accentColor2;
+    @media (max-width: $extraSmall) {
+      content: none;
+    }
   }
+
 }
 .testimonialUser {
   font-weight: 800;
@@ -95,6 +98,9 @@
   @media (max-width: $extraSmall) {
     font-size: 14px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .slide{
@@ -108,4 +114,5 @@
     max-width: 1000px;
   }
 }
+
 

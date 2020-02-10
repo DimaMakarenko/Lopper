@@ -22,7 +22,7 @@ const Clients = () => {
           <Business titleColor="white" />
         </div>
         <div className={cn('logos')}>
-          <Logos isWhite />
+          <Logos color="white" />
         </div>
       </div>
     </section>

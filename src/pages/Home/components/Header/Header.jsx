@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const Header = ({ scrollTo }) => {
+const Header = ({ scrollTo, scrollToForm }) => {
   return (
     <header className={cn('headerBg')}>
       <div className={cn('container', 'header')}>
@@ -30,7 +30,7 @@ const Header = ({ scrollTo }) => {
       <div className={cn('subContent')}>
         <div className={cn('container')}>
           <div className={cn('subheader')}>
-            <p className={cn('subText')}>
+            <p className={cn('subText')} onClick={scrollToForm}>
               Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.
               <span>
                 <img src={arrowCircle} alt="" className={cn('subImage')} />

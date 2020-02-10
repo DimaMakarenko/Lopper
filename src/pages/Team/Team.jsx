@@ -31,7 +31,7 @@ const Team = () => {
           <Intro text={introText} subTitle={introSubTitle} title={title} position="center" />
         </section>
         <OurTeam />
-        <Testimonials image={testimonialsAvatar} />
+        <Testimonials image={testimonialsAvatar} color="blackCurrant" />
         <Subscribe />
       </main>
       <Footer />

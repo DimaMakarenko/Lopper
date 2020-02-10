@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 const cn = classNames.bind(styles);
 
-const Subscribe = () => {
+const Subscribe = ({ mySubRef }) => {
   const myRef = React.createRef();
 
   const handleFocus = () => {
@@ -16,7 +16,7 @@ const Subscribe = () => {
     }
   };
   return (
-    <section className={cn('container block', 'subscribe')}>
+    <section className={cn('container block', 'subscribe')} ref={mySubRef}>
       <h2 className={cn('title')}>Subscribe to our newsletter</h2>
       <p className={cn('subTitle')}>Cras pulvinar mattis nunc sed blandit.</p>
       <form className={cn('form')}>

@@ -29,7 +29,7 @@ const About = () => {
         <Virtues />
         <Clients />
         <Evaluation bgColor="royalPurple" showNumber={false} />
-        <Testimonials image={testimonialsAvatar} />
+        <Testimonials image={testimonialsAvatar} color="royalPurple" />
         <Subscribe />
       </main>
       <Footer />

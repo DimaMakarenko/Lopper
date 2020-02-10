@@ -6,7 +6,6 @@ import galleryImage3 from 'image/gallery/gallery3.png';
 import galleryImage4 from 'image/gallery/gallery4.png';
 import galleryImage5 from 'image/gallery/gallery5.png';
 // styles
-// styles
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 

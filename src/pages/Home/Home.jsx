@@ -23,20 +23,24 @@ const scrollToRef = ref =>
 
 const Home = () => {
   const myRef = useRef(null);
+  const myFormRef = useRef(null);
   const executeScroll = () => {
     scrollToRef(myRef);
+  };
+  const executeScrollToForm = () => {
+    scrollToRef(myFormRef);
   };
 
   return (
     <div className={cn('home')}>
-      <Header scrollTo={executeScroll} />
+      <Header scrollTo={executeScroll} scrollToForm={executeScrollToForm} />
       <main>
         <OurServices services={HOME_SERVICES} />
         <Features />
         <Clients myRef={myRef} />
         <Evaluation bgColor="currant" />
-        <Testimonials image={testimonialsAvatar} />
-        <Subscribe />
+        <Testimonials image={testimonialsAvatar} color="currant" />
+        <Subscribe mySubRef={myFormRef} />
       </main>
       <Footer />
     </div>

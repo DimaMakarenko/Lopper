@@ -25,17 +25,26 @@
 }
 
 .prevSlide {
-  position: absolute;
-  left: -800px;
+  left: -1000px;
 }
 
 .nextSlide {
-  position: absolute;
-  right: -800px;
+  right: -1000px;
 }
-.slider{
-  position: relative;
+
+.prevSlide, .nextSlide {
 }
-.sliderWrapper{
+
+.sliderWrapper {
   display: flex;
+  transition: 1s;
+  position: relative;
+  //overflow: hidden;
+}
+
+.slider {
+}
+
+.slide {
+  position: absolute;
 }

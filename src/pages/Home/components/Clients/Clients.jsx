@@ -21,7 +21,7 @@ const Clients = ({ myRef }) => {
         <div className={cn('business')}>
           <Business titleColor="pink" />
         </div>
-        <Logos isWhite={false} />
+        <Logos color="default" />
       </div>
     </section>
   );
